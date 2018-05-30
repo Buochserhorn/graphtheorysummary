@@ -1,4 +1,4 @@
-# graphtheorysummary
+# Graph Theory summary
 LaTeX-ed collection of all Theorems, Definition, etc. from the lecture notes to the course "Graph Theory" taught by Benny Sudakov and the corresponding exercises from FS 2018 at ETH Zurich
 
 I left out mainly examples and proofs. Numbering is the same as in the lecture notes, gaps in the numbering were made with \addtocounter{thm}{1}.
