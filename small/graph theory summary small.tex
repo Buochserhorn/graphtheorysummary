@@ -48,7 +48,25 @@
 \@addtoreset{problem}{subsection}
 \makeatother
 
-
+\newtheoremstyle{plain}% name of the style to be used
+  {}   % ABOVESPACE
+  {\parskip}   % BELOWSPACE
+  {\itshape}  % BODYFONT
+  {0pt}       % INDENT (empty value is the same as 0pt)
+  {\bfseries} % HEADFONT
+  {.}         % punctuation between head and body
+  {5pt plus 1pt minus 1pt} % space after theorem head; " " = normal interword space
+  {}          % CUSTOM-HEAD-SPEC
+  
+\newtheoremstyle{definition}
+  {}% measure of space to leave above the theorem. E.g.: 3pt
+  {\parskip}% measure of space to leave below the theorem. E.g.: 3pt
+  {}% name of font to use in the body of the theorem
+  {0pt}% measure of space to indent
+  {\bfseries}% name of head font
+  {.}% punctuation between head and body
+  {5pt plus 1pt minus 1pt}% space after theorem head; " " = normal interword space
+  {}% Manually specify head
 
 \theoremstyle{plain} % default, italic, extra space
 \newtheorem{thm}{Theorem}
@@ -67,19 +85,14 @@
 \theoremstyle{definition} % roman, extra spave
 \newtheorem{defi}[thm]{Definition}
 
-% \addtocounter{thm}{3} if one wants to add to counter, if an example from lectture notes is skipped, to maintain the same numbering, insert in right place
-
 
 % Modify theorem counter to match that of the section unit
-%\preto{\chapter}{\renewcommand{\thetheorem}{\thechapter.\arabic{theorem}}}%
 \preto{\section}{\renewcommand{\thethm}{\thesection.\arabic{thm}}}%
-%\preto{\subsection}{\renewcommand{\thetheorem}{\thesubsection.\arabic{theorem}}}%
+
 
 % Reset the counter at every sectional unit
 \makeatletter
-%\@addtoreset{theorem}{chapter}
 \@addtoreset{thm}{section}
-%\@addtoreset{theorem}{subsection}
 \makeatother
 
 \begin{document}
