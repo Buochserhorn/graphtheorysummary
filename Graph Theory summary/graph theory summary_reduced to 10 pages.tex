@@ -1,3 +1,17 @@
+%
+%
+%    SEARCH (Ctrl+F) for "addtocounter", to find all places, where elemnts were deleted
+%
+%
+%
+%
+%
+%
+
+
+
+
+
 \documentclass[11pt, fleqn, a4paper, landscape]{article}
 \usepackage{listings}
 \usepackage{color}
@@ -69,21 +83,21 @@
   {}% Manually specify head
 
 \theoremstyle{plain} % default, italic, extra space
-\newtheorem{thm}{Theorem}
-\newtheorem{lem}[thm]{Lemma}
-\newtheorem{pro}[thm]{Proposition}
-\newtheorem{cor}[thm]{Corollary}
+\newtheorem{thm}{Thm}
+\newtheorem{lem}[thm]{Lem}
+\newtheorem{pro}[thm]{Prop}
+\newtheorem{cor}[thm]{Cor}
 
 \theoremstyle{remark} % roman, no space
-\newtheorem{rem}[thm]{Remark}
-\newtheorem{nota}[thm]{Notation}
+\newtheorem{rem}[thm]{Rem}
+\newtheorem{nota}[thm]{Not}
 \newtheorem{claim}[thm]{Claim}
 \newtheorem{fact}{Fact}
 \newtheorem{que}[thm]{Question}
-\newtheorem{problem}{Problem}
+\newtheorem{problem}{P}
 
 \theoremstyle{definition} % roman, extra space
-\newtheorem{defi}[thm]{Definition}
+\newtheorem{defi}[thm]{Def}
 
 
 % Modify theorem counter to match that of the section unit
@@ -106,37 +120,41 @@
 %\begin{tiny}
 
 \section{Basic notions}
-\subsection{Graphs}
-\begin{defi}
-A graph $G$ is a pair $G = (V,E)$ where $V$ is a set of vertices and $E$ is a (multi)set of unordered pairs of vertices. The elements of $E$ are called edges. We write $V (G)$ for the set of vertices and $E(G)$ for the set of edges of a graph $G$. Also, $|G| = |V (G)|$ denotes the number of
-vertices and $e(G) = |E(G)|$ denotes the number of edges.
-\end{defi}
-\begin{defi}
-A loop is an edge $(v, v)$ for some $v\in V$ . An edge $e = (u, v)$ is a multiple edge if it appears multiple times in $E$. A graph is simple if it has no loops or multiple edges.
-\end{defi}
-\begin{defi}
-\begin{itemize}
-\item Vertices $u, v$ are adjacent in $G$ if $(u, v)\in E(G)$.
-\item An edge $e \in E(G)$ is incident to a vertex $v \in V (G)$ if $v \in e$.
-\item Edges $e, e'$ are incident if $e\cap e'\ne \emptyset$.
-\item If $(u, v) \in E $ then $v$ is a neighbour of $u$.
-\end{itemize}
-\end{defi}
+\addtocounter{subsection}{1} 
+%\subsection{Graphs}
+%\begin{defi}
+%A graph $G$ is a pair $G = (V,E)$ where $V$ is a set of vxs and $E$ is a (multi)set of unordered pairs of vxs. The elements of $E$ are called edges. We write $V (G)$ for the set of vxs and $E(G)$ for the set of edges of a graph $G$. Also, $|G| = |V (G)|$ denotes the number of
+%vxs and $e(G) = |E(G)|$ denotes the number of edges.
+%\end{defi}
+\addtocounter{thm}{1}
+%\begin{defi}
+%A loop is an edge $(v, v)$ for some $v\in V$ . An edge $e = (u, v)$ is a multiple edge if it appears multiple times in $E$. A graph is simple if it has no loops or multiple edges.
+%\end{defi}
+\addtocounter{thm}{1}
+%\begin{defi}
+%\begin{itemize}
+%\item Vertices $u, v$ are adjacent in $G$ if $(u, v)\in E(G)$.
+%\item An edge $e \in E(G)$ is incident to a vertex $v \in V (G)$ if $v \in e$.
+%\item Edges $e, e'$ are incident if $e\cap e'\ne \emptyset$.
+%\item If $(u, v) \in E $ then $v$ is a neighbour of $u$.
+%\end{itemize}
+%\end{defi}
+\addtocounter{thm}{1}
 \addtocounter{thm}{1}
 
 \subsection{Graph isomorphism}
 \addtocounter{thm}{1}
 \begin{defi}
- Let $G_1 = (V_1,E_1)$ and $G_2 = (V_2,E_2)$ be graphs. An isomorphism $\phi: G_1 \to G_2$ is a bijection (a one-to-one correspondence) from $V_1$ to $V_2$ such that $(u, v) \in E_1$ if and only if $(\phi(u), \phi(v))\in E_2$. We say $G_1$ is isomorphic to $G_2$ if there is an isomorphism between them.
+ Let $G_1 = (V_1,E_1)$ and $G_2 = (V_2,E_2)$ be graphs. An isomorphism $\phi: G_1 \to G_2$ is a bijection (a one-to-one correspondence) from $V_1$ to $V_2$ such that $(u, v) \in E_1$ iff $(\phi(u), \phi(v))\in E_2$. We say $G_1$ is isomorphic to $G_2$ if there is an isomorphism between them.
 \end{defi}
 \addtocounter{thm}{1}
 \begin{rem}
-Isomorphism is an equivalence relation of graphs. This means that
-\begin{itemize}
-\item Any graph is isomorphic to itself
-\item If $G_1$ is isomorphic to $G_2$ then $G_2$ is isomorphic to $G_1$
-\item If $G_1 $ is isomorphic to $G_2$ and $G_2$ is isomorphic to $G_3$, then $G_1$ is isomorphic to $G_3$.
-\end{itemize}
+Isomorphism is an equivalence relation of graphs. (reflexive, symmetric, transitive)
+%\begin{itemize}
+%\item Any graph is isomorphic to itself
+%\item If $G_1$ is isomorphic to $G_2$ then $G_2$ is isomorphic to $G_1$
+%\item If $G_1 $ is isomorphic to $G_2$ and $G_2$ is isomorphic to $G_3$, then $G_1$ is isomorphic to $G_3$.
+%\end{itemize}
 \end{rem}
 
 
@@ -154,9 +172,10 @@ $n \times n $ symmetric matrix defined by
 \[a_{ij}=\begin{cases}1 & if (i,j)\in E\\ 0 & otherwise\end{cases}\]
 \end{defi} 
 \addtocounter{thm}{1}
-\begin{rem}
-Any adjacency matrix $A $ is real and symmetric, hence the spectral theorem proves that $A$ has an orthogonal basis of eigenvalues with real eigenvectors. This important fact allows us to use spectral methods in graph theory. Indeed, there is a large subfield of graph theory called spectral graph theory.
-\end{rem}
+%\begin{rem}
+%Any adjacency matrix $A $ is real and symmetric, hence the spectral theorem proves that $A$ has an orthogonal basis of eigenvalues with real eigenvectors. This important fact allows us to use spectral methods in graph theory. Indeed, there is a large subfield of graph theory called spectral graph theory.
+%\end{rem}
+\addtocounter{thm}{1}
 
 \begin{defi}
 Let $G = (V,E)$ be a graph with $V = \{v_1, \dots , v_n\}$ and $E = \{e_1, \dots , e_m\}$. Then the incidence matrix $B = B(G)$ of $G$ is the $n\times m$ matrix defined by \[b_{ij}=\begin{cases}1 & if v_i\in e_j\\ 0 & otherwise\end{cases}\]
@@ -168,13 +187,15 @@ Every column of $B$ has $|e| = 2$ entries 1.
 
 \subsection{Degree}
 
-\begin{defi}
-Given $G = (V,E)$ and a vertex $v \in V$ , we define the neighbourhood $N(v)$ of $v$ to
-be the set of neighbours of $v$. Let the degree $d(v)$ of $v$ be $|N(v)|$, the number of neighbours of $v$. A vertex $v$ is isolated if $d(v) = 0.$
-\end{defi}
-\begin{rem}
-$d(v)$ is the number of 1s in the row corresponding to v in the adjacency matrix $A(G)$ or the incidence matrix $B(G)$.
-\end{rem} 
+%\begin{defi}
+%Given $G = (V,E)$ and a vertex $v \in V$ , we define the neighbourhood $N(v)$ of $v$ to
+%be the set of neighbours of $v$. Let the degree $d(v)$ of $v$ be $|N(v)|$, the number of neighbours of $v$. A vertex $v$ is isolated if $d(v) = 0.$
+%\end{defi}
+\addtocounter{thm}{1}
+%\begin{rem}
+%$d(v)$ is the number of 1s in the row corresponding to v in the adjacency matrix $A(G)$ or the incidence matrix $B(G)$.
+%\end{rem}
+\addtocounter{thm}{1} 
 \addtocounter{thm}{1}
 \begin{fact}
 For any graph $G$ on the vertex set $[n]$ with adjacency and incidence matrices $A$ and $B$, we have $BB^T = D + A$, where
@@ -187,12 +208,13 @@ d(1) & 0 & 0  \\
 $  
 \end{fact}
 
-\begin{nota}
-The minimum degree of a graph $G$ is denoted $\delta(G)$, the maximum degree is denoted $\Delta(G)$. The average degree is \[\overline{d}(G) =\frac{\sum_{v\in G}}{|V(G)|}\] Note that $\delta\le\overline{d}\le\Delta$.
-\end{nota}
+%\begin{nota}
+%The minimum degree of a graph $G$ is denoted $\delta(G)$, the maximum degree is denoted $\Delta(G)$. The average degree is \[\overline{d}(G) =\frac{\sum_{v\in G}}{|V(G)|}\] Note that $\delta\le\overline{d}\le\Delta$.
+%\end{nota}
+\addtocounter{thm}{1}
 
 \begin{defi}
-A graph $G$ is $d$-regular if and only if all vertices have degree $d$.
+A graph $G$ is $d$-regular iff all vxs have degree $d$.
 \end{defi}
 \addtocounter{thm}{1}
 \begin{pro}
@@ -200,7 +222,7 @@ For every $G = (V,E)$, $\sum_{v\in G}d(G)=2|E|$
 \end{pro}
 
 \begin{cor}
-Every graph has an even number of vertices of odd degree.
+Every graph has an even number of vxs of odd degree.
 \end{cor}
 
 \subsection{Subgraphs}
@@ -214,19 +236,21 @@ Given $G = (V,E)$ and $U\subseteq  V (U \ne \emptyset)$, let $G[U]$ denote the g
 endpoints in $U$). Then $G[U]$ is called the subgraph of $G$ induced by $U$.
 \end{defi}
 \addtocounter{thm}{1}
-\subsection{Special graphs}
+\addtocounter{subsection}{1} 
+%\subsection{Special graphs}
 
-\begin{itemize}
-\item  $K_n$ is the complete graph, or a clique. Take $n$ vertices and all possible edges connecting them.
-\item An empty graph has no edges.
-\item $G = (V,E)$ is bipartite if there is a partition $V = V_1 \cup V_2$ into two disjoint sets such that each $e \in E(G)$ intersects both $V_1$ and $V_2$.
-\item $K_{n,m}$ is the complete bipartite graph. Take $n + m$ vertices partitioned into a set $ A$ of size $n$ and a set $B$ of size $m$, and include every possible edge between $A$ and $B$.
-\end{itemize}
+%\begin{itemize}
+%\item  $K_n$ is the complete graph, or a clique. Take $n$ vxs and all possible edges connecting them.
+%\item An empty graph has no edges.
+%\item $G = (V,E)$ is bipartite if there is a partition $V = V_1 \cup V_2$ into two disjoint sets such that each $e \in E(G)$ intersects both $V_1$ and $V_2$.
+%\item $K_{n,m}$ is the complete bipartite graph. Take $n + m$ vxs partitioned into a set $ A$ of size $n$ and a set $B$ of size $m$, and include every possible edge between $A$ and $B$.
+%\end{itemize}
+\addtocounter{thm}{1}
 \addtocounter{thm}{1}
 \subsection{Walks, paths and cycles}
 
 \begin{defi}
-A walk in $G$ is a sequence of vertices $v_0, v_1, \dots , v_k$, and a sequence of edges $(v_i, v_{i+1}) \in E(G)$. A walk is a path if all $v_i$ are distinct. If for such a path with $k \ge 2$, $(v_0, v_k)$ is also
+A walk in $G$ is a sequence of vxs $v_0, v_1, \dots , v_k$, and a sequence of edges $(v_i, v_{i+1}) \in E(G)$. A walk is a path if all $v_i$ are distinct. If for such a path with $k \ge 2$, $(v_0, v_k)$ is also
 an edge in $G$, then $v_0, v_1 \dots , v_k, v_0$ is a cycle. For multigraphs, we also consider loops and pairs of multiple edges to be cycles.
 \end{defi}
 
@@ -249,22 +273,22 @@ Note that we have also proved that a graph with minimum degree $\delta\ge 2$ con
 \subsection{Connectivity}
 
 \begin{defi}
-A graph $G$ is connected if for all pairs $u, v \in G$, there is a path in $G$ from $u$ to $v$.
+A graph $G$ is conn. if for all pairs $u, v \in G$, there is a path in $G$ from $u$ to $v$.
 \end{defi}
 Note that it suffices for there to be a walk from u to v, by Proposition 1.31.
 \addtocounter{thm}{1}
 \begin{defi}
-A (connected) component of $G$ is a connected subgraph that is maximal by inclusion. We say $G$ is connected if and only if it has one connected component.
+A (conn.) component of $G$ is a conn. subgraph that is maximal by inclusion. We say $G$ is conn. iff it has one conn. component.
 \end{defi}
 \addtocounter{thm}{1}
 \begin{pro}
-A graph with $n$ vertices and $m$ edges has at least $n-m$ connected components.
+A graph with $n$ vxs and $m$ edges has at least $n-m$ conn. components.
 \end{pro}
 
 \subsection{Graph operations and parameters}
 
 \begin{defi}
-Given $G = (V,E)$, the complement $\overline{G}$ of $G$ has the same vertex set $V$ and $(u, v) \in E(\overline{G})$ if and only if $(u, v) \notin E(G)$.
+Given $G = (V,E)$, the complement $\overline{G}$ of $G$ has the same vertex set $V$ and $(u, v) \in E(\overline{G})$ iff $(u, v) \notin E(G)$.
 \end{defi}
 \addtocounter{thm}{1}
 \begin{defi}
@@ -273,11 +297,11 @@ induced subgraph in $G$.
 \end{defi}
 \addtocounter{thm}{1}
 \begin{nota}
-Let $\omega(G)$ denote the number of vertices in a maximum-size clique in $G$, let $\alpha(G)$ denote the number of vertices in a maximum-size independent set in $G$.
+Let $\omega(G)$ denote the number of vxs in a maximum-size clique in $G$, let $\alpha(G)$ denote the number of vxs in a maximum-size independent set in $G$.
 \end{nota}
 
 \begin{claim}
-A vertex set $U\subseteq V (G)$ is a clique if and only if $U\subseteq V(\overline{G})$ is an independent set.
+A vertex set $U\subseteq V (G)$ is a clique iff $U\subseteq V(\overline{G})$ is an independent set.
 \end{claim}
 
 \begin{cor}
@@ -287,20 +311,20 @@ We have $\omega(G)=\alpha(\overline{G})$ and $\alpha(G)=\omega(\overline{G})$.
 \section{Trees}
 \subsection{Trees}
 \begin{defi}
-A graph having no cycle is acyclic. A forest is an acyclic graph, a tree is a connected acyclic graph. A leaf (or pendant vertex ) is a vertex of degree 1.
+A graph having no cycle is acyclic. A forest is an acyclic graph, a tree is a conn. acyclic graph. A leaf is a vertex of degree 1.
 \end{defi}
 \addtocounter{thm}{1}
 \begin{lem}
-Every finite tree with at least two vertices has at least two leaves. Deleting a leaf from an $n$-vertex tree produces a tree with $n-1$ vertices.
+Every finite tree with at least two vxs has at least two leaves. Deleting a leaf from an $n$-vertex tree produces a tree with $n-1$ vxs.
 \end{lem}
 
 \subsection{Equivalent definitions of trees}
 
 \begin{thm}
 For an n-vertex simple graph $G$ (with $n \ge 1$), the following are equivalent (and
-characterize the trees with n vertices).
-(a) G is connected and has no cycles.
-(b) G is connected and has n - 1 edges.
+characterize the trees with n vxs).
+(a) G is conn. and has no cycles.
+(b) G is conn. and has n - 1 edges.
 (c) G has n - 1 edges and no cycles.
 (d) For every pair u, v 2 V (G), there is exactly one u, v-path in G.
 \end{thm}
@@ -315,12 +339,12 @@ An edge contained in a cycle is not a cut-edge.
 
 
 \begin{defi}
-Given a connected graph $G$, a spanning tree $T$ is a subgraph of $G$ which is a tree and contains every vertex of $G$.
+Given a conn. graph $G$, a spanning tree $T$ is a subgraph of $G$ which is a tree and contains every vertex of $G$.
 \end{defi}
 
 \begin{cor}
 \begin{itemize}
-\item  Every connected graph on n vertices has at least n - 1 edges and contains a spanning tree,
+\item  Every conn. graph on n vxs has at least n - 1 edges and contains a spanning tree,
 \item Every edge of a tree is a cut-edge,
 \item Adding an edge to a tree creates exactly one cycle.
 \end{itemize}
@@ -333,7 +357,7 @@ There are $n^{n-2}$ trees with vertex set $[n]$.
 \end{thm}
 
 \begin{defi}[Prüfer code]
-Let $T$ be a tree on an ordered set $S$ of n vertices. To compute the
+Let $T$ be a tree on an ordered set $S$ of n vxs. To compute the
 Prüfer sequence $f(T)$, iteratively delete the leaf with the smallest label and append the label of its neighbour to the sequence. After $n - 2$ iterations a single edge remains and we have produced a sequence $f(T)$ of length $n - 2$.
 \end{defi}
 \addtocounter{thm}{1}
@@ -342,7 +366,7 @@ For an ordered $n$-element set $S$, the Prüfer code $f$ is a bijection between 
 \end{pro}
 \addtocounter{thm}{1}
 \begin{defi}
-A directed graph, or digraph for short, is a vertex set and an edge (multi-)set of ordered pairs of vertices. Equivalently, a digraph is a (possibly not-simple) graph where each edge is assigned a direction. The out-degree (respectively in-degree) of a vertex is the number of edges
+A directed graph, or digraph for short, is a vertex set and an edge (multi-)set of ordered pairs of vxs. Equivalently, a digraph is a (possibly not-simple) graph where each edge is assigned a direction. The out-degree (respectively in-degree) of a vertex is the number of edges
 incident to that vertex which point away from it (respectively, towards it).
 \end{defi}
 
@@ -350,13 +374,13 @@ incident to that vertex which point away from it (respectively, towards it).
 \subsection{Vertex connectivity}
 
 \begin{defi}
-A vertex cut in a connected graph $G = (V,E)$ is a set $ S \subseteq V$ such that $G\setminus S := G[V \setminus S]$ has more than one connected component. A cut vertex is a vertex $v$ such that $\{v\}$ is a cut.
+A vertex cut in a conn. graph $G = (V,E)$ is a set $ S \subseteq V$ such that $G\setminus S := G[V \setminus S]$ has more than one conn. component. A cut vertex is a vertex $v$ such that $\{v\}$ is a cut.
 \end{defi}
 \begin{defi}
-$G$ is called $k$-connected if $|V (G)|> k$ and if $G\setminus X$ is connected for every set $X \subseteq V$ with $|X|< k$. In other words, no two vertices of $G$ are separated by fewer than $k$ other vertices. Every (non-empty) graph is 0-connected and the 1-connected graphs are precisely the non-trivial connected graphs. The greatest integer $k$ such that $G$ is k-connected is the connectivity $\kappa (G)$ of $G$.
+$G$ is called $k$-conn. if $|V (G)|> k$ and if $G\setminus X$ is conn. for every set $X \subseteq V$ with $|X|< k$. In other words, no two vxs of $G$ are separated by fewer than $k$ other vxs. Every (non-empty) graph is 0-conn. and the 1-conn. graphs are precisely the non-trivial conn. graphs. The greatest integer $k$ such that $G$ is k-conn. is the connectivity $\kappa (G)$ of $G$.
 17
 \item $G = K_n: \kappa (G) = n - 1$
-\item $G = K_{m,n}, m \le n: \kappa (G) = m$. Indeed, let $G$ have bipartition $A \cup B$, with $|A|= m$  and $|B|= n$. Deleting $A$ disconnects the graph. On the other hand, deleting $S \subset V$ with $|S|< m$ leaves both $A\setminus S$ and $B\setminus S$ non-empty and any $a \in A\setminus S$ is connected to any $b \in B \setminus S$. Hence $G\setminus S$ is connected.
+\item $G = K_{m,n}, m \le n: \kappa (G) = m$. Indeed, let $G$ have bipartition $A \cup B$, with $|A|= m$  and $|B|= n$. Deleting $A$ disconnects the graph. On the other hand, deleting $S \subset V$ with $|S|< m$ leaves both $A\setminus S$ and $B\setminus S$ non-empty and any $a \in A\setminus S$ is conn. to any $b \in B \setminus S$. Hence $G\setminus S$ is conn.
 \end{defi}
 \begin{pro}
 For every graph $G$, $\kappa (G) \le \delta(G)$.
@@ -366,13 +390,13 @@ For every graph $G$, $\kappa (G) \le \delta(G)$.
 High minimum degree does not imply connectivity. Consider two disjoint copies of $K_n$.
 \end{rem}
 \begin{thm}[Mader 1972]
-Every graph of average degree at least $4k$ has a $k$-connected subgraph.
+Every graph of average degree at least $4k$ has a $k$-conn. subgraph.
 \end{thm}
 
 \subsection{Edge connectivity}
 \begin{defi}
 A disconnecting set of edges is a set $F \subseteq E(G)$ such that $G\setminus F$ has more than one component. Given $S$, $T \subset V (G)$, the notation $[S, T]$ specifies the set of edges having one endpoint
-in $S$ and the other in $T$. An edge cut is an edge set of the form $[S, S]$, where $S$ is a non-empty proper subset of $V (G)$. A graph is $k$-edge-connected if every disconnecting set has at least $k$ edges.
+in $S$ and the other in $T$. An edge cut is an edge set of the form $[S, S]$, where $S$ is a non-empty proper subset of $V (G)$. A graph is $k$-edge-conn. if every disconnecting set has at least $k$ edges.
 The edge-connectivity of $G$, written $\kappa'(G)$, is the minimum size of a disconnecting set. One edge disconnecting G is called a bridge.
 $G = Kn: \kappa'(G) = n - 1.$
 \end{defi}
@@ -387,12 +411,12 @@ $\kappa (G) \le \kappa'(G) \le \delta(G).$
 
 \subsection{Blocks}
 \begin{defi}
-A block of a graph $G$ is a maximal connected subgraph of $G$ that has no cut-vertex.
-If $G$ itself is connected and has no cut-vertex, then $G$ is a block.
+A block of a graph $G$ is a maximal conn. subgraph of $G$ that has no cut-vertex.
+If $G$ itself is conn. and has no cut-vertex, then $G$ is a block.
 \end{defi}
 \addtocounter{thm}{1}
 \begin{rem}
-If a block $B$ has at least three vertices, then $B$ is 2-connected. If an edge is a block of $G$ then it is a cut-edge of $G$.
+If a block $B$ has at least three vxs, then $B$ is 2-conn. If an edge is a block of $G$ then it is a cut-edge of $G$.
 \end{rem}
 
 \begin{pro}
@@ -400,31 +424,31 @@ Two blocks in a graph share at most one vertex.
 \end{pro}
 
 \begin{defi}
-The block graph of a graph $G$ is a bipartite graph $H$ in which one partite set consists of the cut-vertices of $G$, and the other has a vertex $b_i$ for each block $B_i$ of $G$. We include $(v, b_i)$ as an edge of $H$ if and only if $v \in B_i.$
+The block graph of a graph $G$ is a bipartite graph $H$ in which one partite set consists of the cut-vxs of $G$, and the other has a vertex $b_i$ for each block $B_i$ of $G$. We include $(v, b_i)$ as an edge of $H$ iff $v \in B_i.$
 \end{defi}
 \addtocounter{thm}{1}
 \begin{pro}
-The block graph of a connected graph is a tree.
+The block graph of a conn. graph is a tree.
 \end{pro}
 
-\subsection{2-connected graphs}
+\subsection{2-conn. graphs}
 
 \begin{defi}
 Two paths are internally disjoint if neither contains a non-endpoint vertex of the other. We denote the length of the shortest path from $u$ to $v$ (the distance from $u$ to $v$) by $d(u, v)$.
 \end{defi}
 
 \begin{thm}[Whitney 1932]
-A graph $G$ having at least three vertices is 2-connected if and only
-if each pair $u, v \in V (G)$ is connected by a pair of internally disjoint $u, v$-paths in $G$.
+A graph $G$ having at least three vxs is 2-conn. if and only
+if each pair $u, v \in V (G)$ is conn. by a pair of internally disjoint $u, v$-paths in $G$.
 \end{thm}
 
 \begin{cor}
-$G$ is 2-connected and $|G|\ge 3$ if and only if every two vertices in $G$ lie on a common cycle.
+$G$ is 2-conn. and $|G|\ge 3$ iff every two vxs in $G$ lie on a common cycle.
 \end{cor}
-\subsection{Menger’s Theorem}
+\subsection{Menger’s Thm}
 
 \begin{defi}
-Let $A,B \subseteq V$ . An $A-B$ path is a path with one endpoint in $A$, the other endpoint in $B$, and all interior vertices outside of $A \cup B$. Any vertex in $A - B$ is a trivial $A-B$ path.
+Let $A,B \subseteq V$ . An $A-B$ path is a path with one endpoint in $A$, the other endpoint in $B$, and all interior vxs outside of $A \cup B$. Any vertex in $A - B$ is a trivial $A-B$ path.
 
 If $X \subseteq V$ (or $X \subseteq E$) is such that every $A-B$ path in $G$ contains a vertex (or an edge) from $X$, we say that $X$ separates the sets $A$ and $B$ in $G$. This implies in particular that $A \cap B \subseteq X$.
 \end{defi}
@@ -434,32 +458,33 @@ number of vertex-disjoint $S-T$ paths is equal to the minimum size of an $S-T$ s
 \end{thm}
 
 \begin{cor}
-For $S \subseteq V$ and $v\in V \setminus S$, the minimum number of vertices distinct from $v$ separating $v$ from $S$ in $G$ is equal to the maximum number of paths forming an $v-S$ fan in $G$. (that is, the maximum number of $\{v\}-S$ paths which are disjoint except at $v$).
+For $S \subseteq V$ and $v\in V \setminus S$, the minimum number of vxs distinct from $v$ separating $v$ from $S$ in $G$ is equal to the maximum number of paths forming an $v-S$ fan in $G$. (that is, the maximum number of $\{v\}-S$ paths which are disjoint except at $v$).
 \end{cor}
 
 \begin{defi}
-The line graph of $G$, written $L(G)$, is the graph whose vertices are the edges of $G$, with $(e, f) \in E(L(G))$ when $e = (u, v)$ and $f = (v,w)$ in $G$ (i.e. when $e$ and $f$ share a vertex).
+The line graph of $G$, written $L(G)$, is the graph whose vxs are the edges of $G$, with $(e, f) \in E(L(G))$ when $e = (u, v)$ and $f = (v,w)$ in $G$ (i.e. when $e$ and $f$ share a vertex).
 \end{defi}
 \addtocounter{thm}{1}
 \begin{cor}
-Let u and v be two distinct vertices of G.
+Let u and v be two distinct vxs of G.
 \begin{enumerate}
-\item If $(u, v) \notin E$, then the minimum number of vertices different from $u, v$ separating $u$ from $v$ in $G$ is equal to the maximum number of internally vertex-disjoint $u-v$ paths in $G$.
+\item If $(u, v) \notin E$, then the minimum number of vxs different from $u, v$ separating $u$ from $v$ in $G$ is equal to the maximum number of internally vertex-disjoint $u-v$ paths in $G$.
 \item The minimum number of edges separating $u$ from v in G is equal to the maximum number of edge-disjoint $u-v$ paths in $G$.
 \end{enumerate}
 \end{cor}
 
-\begin{thm}[Global Version of Menger’s Theorem]
+\begin{thm}
+(Global Version of Menger’s Theorem)
 \begin{enumerate}
-\item A graph is k-connected if and only if it contains k internally vertex-disjoint paths between any
-two vertices.
-\item A graph is k-edge-connected if and only if it contains k edge-disjoint paths between any two
-vertices.
+\item A graph is k-conn. iff it contains k internally vertex-disjoint paths between any
+two vxs.
+\item A graph is k-edge-conn. iff it contains k edge-disjoint paths between any two
+vxs.
 \end{enumerate}
 \end{thm}
 
-\section{Eulerian and Hamiltonian cycles}
-\subsection{Eulerian trails and tours}
+\section{Eu. \& Ha. cyc.}
+\subsection{Eul. trails \& tours}
 \addtocounter{thm}{1}
 \begin{defi}
 A trail is a walk with no repeated edges.
@@ -470,15 +495,15 @@ An Eulerian trail in a (multi)graph $G = (V,E)$ is a walk in $G$ passing through
 \end{defi}
 \addtocounter{thm}{1}
 \begin{thm}
-A connected (multi)graph has an Eulerian tour if and only if each vertex has even degree.
+A conn. (multi)graph has an Eulerian tour iff each vertex has even degree.
 \end{thm}
 
 \begin{lem}
-Every maximal trail in an even graph (i.e., a graph where all the vertices have even degree) is a closed trail.
+Every maximal trail in an even graph (i.e., a graph where all the vxs have even degree) is a closed trail.
 \end{lem} 
 
 \begin{cor}
-A connected multigraph $G$ has an Eulerian trail if and only if it has either 0 or 2 vertices of odd degree.
+A conn. multigraph $G$ has an Eulerian trail iff it has either 0 or 2 vxs of odd degree.
 \end{cor}
 
 \subsection{Hamilton paths and cycles}
@@ -487,26 +512,26 @@ A Hamilton path/cycle in a graph $G$ is a path/cycle visiting every vertex of $G
 \end{defi}
 \addtocounter{thm}{1}
 \begin{pro}
-If $G$ is Hamiltonian then for any set $S \subseteq V$ the graph $G\setminus S$ has at most $|S|$ connected components.
+If $G$ is Hamiltonian then for any set $S \subseteq V$ the graph $G\setminus S$ has at most $|S|$ conn. components.
 \end{pro}
 
 \begin{cor}
-If a connected bipartite graph $G = (V,E)$ with bipartition $V = A\cup B$ is Hamiltonian then $|A|=|B|$.
+If a conn. bipartite graph $G = (V,E)$ with bipartition $V = A\cup B$ is Hamiltonian then $|A|=|B|$.
 \end{cor}
 \addtocounter{thm}{1}
 \begin{thm}[Dirac 1952]
-If $G$ is a simple graph with $n \ge 3$ vertices and if $\delta(G) \ge n/2$, then $G$ is Hamiltonian.
+If $G$ is a simple graph with $n \ge 3$ vxs and if $\delta(G) \ge n/2$, then $G$ is Hamiltonian.
 \end{thm}
 \addtocounter{thm}{1}
 \begin{thm}[Ore 1960]
-If $G$ is a simple graph with $n\ge 3$ vertices such that for every pair of
-non-adjacent vertices $u, v$ of $G$ we have $d(u) + d(v)\ge |G|$, then $G $ is Hamiltonian.
+If $G$ is a simple graph with $n\ge 3$ vxs such that for every pair of
+non-adjacent vxs $u, v$ of $G$ we have $d(u) + d(v)\ge |G|$, then $G $ is Hamiltonian.
 \end{thm}
 \section{Matchings}
 \begin{defi}
 A set of edges $M \subseteq E(G)$ in a graph $G$ is called a matching if $e \cap e' = \emptyset$ for any pair of edges $e, e' \in M$.
 
-A matching is perfect if $|M|=\frac{|V (G)|}{2}$ , i.e. it covers all vertices of $G$. We denote the size of the maximum matching in $G$, by $\nu(G)$.
+A matching is perfect if $|M|=\frac{|V (G)|}{2}$ , i.e. it covers all vxs of $G$. We denote the size of the maximum matching in $G$, by $\nu(G)$.
 
 $G=K_n; \nu(G)=\left\lfloor\frac{n}{2}\right\rfloor$
 
@@ -519,7 +544,7 @@ $\nu(Petersen Graph)=5$
 A matching in a graph $G$ corresponds to an independent set in the line graph $L(G)$.
 \end{rem}
 \begin{defi}
-A set of vertices $T \subseteq V (G)$ of a graph  $G$ is called a cover of $G$ if every edge $e \in E(G)$ intersects $T (e \cap T \neq \emptyset)$, i.e., $G \setminus T$ is an empty graph. Then, $\tau(G)$ denotes the size of
+A set of vxs $T \subseteq V (G)$ of a graph  $G$ is called a cover of $G$ if every edge $e \in E(G)$ intersects $T (e \cap T \neq \emptyset)$, i.e., $G \setminus T$ is an empty graph. Then, $\tau(G)$ denotes the size of
 the minimum cover.
 
 $G = Kn: \tau(G) = n - 1$
@@ -532,12 +557,12 @@ $\tau(Petersen Graph)=6$
 \begin{pro}
 $\nu(G) \le\tau(G) \le 2\nu(G).$
 \end{pro}
-\subsection{Real-world applications of matchings}
-
+%\subsection{Real-world applications of matchings}
+\addtocounter{subsection}{1}
 \subsection{Hall’s Theorem}
 \begin{thm}[Hall 1935]
 A bipartite graph $G = (V,E)$ with bipartition $V = A\cup B$ has a matching
-covering $A$ if and only if $|N(S)|\ge|S|\forall S \subseteq A$
+covering $A$ iff $|N(S)|\ge|S|\forall S \subseteq A$
 \end{thm}
 
 \begin{cor}
@@ -553,7 +578,7 @@ Every regular graph of positive even degree has a 2-factor (a spanning 2-regular
 \end{cor}
 
 \begin{rem}
-A 2-factor is a disjoint union of cycles covering all the vertices of a graph
+A 2-factor is a disjoint union of cycles covering all the vxs of a graph
 \end{rem}
 
 \begin{defi}
@@ -561,7 +586,7 @@ Let $A_1, \dots ,A_n$ be a collection of sets. A family $\{a_1, \dots , a_n\}$  
 \end{defi}
 
 \begin{cor}
-A collection $A_1, \dots ,A_n$ has an SDR if and only if for all $I \subseteq [n]$ we have $|\bigcup_{i\in I} A_i|\ge|I|$.
+A collection $A_1, \dots ,A_n$ has an SDR iff for all $I \subseteq [n]$ we have $|\bigcup_{i\in I} A_i|\ge|I|$.
 \end{cor}
 \addtocounter{thm}{1}
 \begin{thm}[König 1931]
@@ -575,7 +600,7 @@ $q(G\setminus S) \le|S|for all S \subseteq V (G)$
 since every odd component of GnS will send an edge of the matching to S, and each such edge covers a different vertex in S.
 
 \begin{thm}[Tutte 1947]
-A graph $G$ has a perfect matching if and only if $q(G\setminus S) \le|S|$ for
+A graph $G$ has a perfect matching iff $q(G\setminus S) \le|S|$ for
 all $S \subseteq V (G)$.
 \end{thm}
 
@@ -584,23 +609,24 @@ Every 3-regular graph with no cut-edge has a perfect matching.
 \end{cor}
 \addtocounter{thm}{1}
 \begin{cor}[Berge 1958]
-The largest matching in an $n$-vertex graph $G$ covers $n+min_{S\subseteq V (G)}(|S|- q(G\setminus S))$ vertices.
+The largest matching in an $n$-vertex graph $G$ covers $n+min_{S\subseteq V (G)}(|S|- q(G\setminus S))$ vxs.
 \end{cor}
 
 \section{Planar Graphs}
 \begin{defi}
 A polygonal path or polygonal curve in the plane is the union of many line segments such that each segment starts at the end of the previous one and no point appears in more than one segment except for common endpoints of consecutive segments. In a polygonal $u, v$-path, the beginning of the first segment is $u$ and the end of the last segment is $v$.
 
-A drawing of a graph $G$ is a function that maps each vertex $v\in V (G)$ to a point $f(v)$ in the plane and each edge $uv$ to a polygonal $f(u), f(v)$-path in the plane. The images of vertices are distinct.
+A drawing of a graph $G$ is a function that maps each vertex $v\in V (G)$ to a point $f(v)$ in the plane and each edge $uv$ to a polygonal $f(u), f(v)$-path in the plane. The images of vxs are distinct.
 A point in $f(e)\cup f(e')$ other than a common end is a crossing. A graph is planar if it has a drawing without crossings. Such a drawing is a planar embedding of $G$. A plane graph is a particular drawing of a planar graph in the plane with no crossings.
 \end{defi}
 \addtocounter{thm}{1}
-\begin{rem}
-We get the same class of graphs if we only require images of edges to be continuous curves. This is because any continuous line can be arbitrarily accurately approximated by a polygonal curve.
-\end{rem}
+\addtocounter{thm}{1}
+%\begin{rem}
+%We get the same class of graphs if we only require images of edges to be continuous curves. This is because any continuous line can be arbitrarily accurately approximated by a polygonal curve.
+%\end{rem}
 
 \begin{defi}
-An open set in the plane is a set $U \subset \mathbb{R}^2$ such that for every $p\in U$, all points within some small distance from $p$ belong to $U$. A region is an open set $U$ that contains a polygonal $u, v$-path for every pair $u, v \in U$ (that is, it is “path-connected”). The faces of a plane graph are the maximal regions of the plane that are disjoint from the drawing.
+An open set in the plane is a set $U \subset \mathbb{R}^2$ such that for every $p\in U$, all points within some small distance from $p$ belong to $U$. A region is an open set $U$ that contains a polygonal $u, v$-path for every pair $u, v \in U$ (that is, it is “path-conn.”). The faces of a plane graph are the maximal regions of the plane that are disjoint from the drawing.
 \end{defi}
 
 \begin{thm}[Jordan curve theorem]
@@ -613,7 +639,7 @@ This is not true in three dimensions. In $\mathbb{R}$ there is a surface called 
 \end{rem}
 
 \begin{rem}
-The faces of $G$ are pairwise disjoint (they are separated by the edges of G). Two points are in the same face if and only if there is a polygonal path between them which does not cross an edge of $G$. Also, note that a finite graph has a single unbounded face (the area “outside” of the graph).
+The faces of $G$ are pairwise disjoint (they are separated by the edges of G). Two points are in the same face iff there is a polygonal path between them which does not cross an edge of $G$. Also, note that a finite graph has a single unbounded face (the area “outside” of the graph).
 \end{rem}
 
 \begin{pro}
@@ -629,19 +655,20 @@ If $l(f_i)$ denotes the length of a face $f_i$ in a plane graph $G$, then $2e(G)
 \end{pro}
 
 \begin{thm}[Euler's formula 1758]
-If a connected plane graph $G$ has exactly $n$ vertices, $e$ edges
+If a conn. plane graph $G$ has exactly $n$ vxs, $e$ edges
 and $f$ faces, then $n - e + f = 2$.
 \end{thm}
 
-\begin{rem}
-The fact that deleting an edge in a cycle decreases the number of faces by one can be proved formally using the Jordan curve theorem.
-\end{rem}
+%\begin{rem}
+%The fact that deleting an edge in a cycle decreases the number of faces by one can be proved formally using the Jordan curve theorem.
+%\end{rem}
+\addtocounter{thm}{1}
 \begin{thm}
-If $G$ is a planar graph with at least three vertices, then $e(G) \le 3|G|- 6$. If $G$ is also triangle-free, then $e(G)\le 2jG|- 4$.
+If $G$ is a planar graph with at least three vxs, then $e(G) \le 3|G|- 6$. If $G$ is also triangle-free, then $e(G)\le 2jG|- 4$.
 \end{thm}
 
 \begin{cor}
-If $G$ is a planar bipartite $n$-vertex graph with $n \ge 3$ vertices then $G$ has at most $2n - 4$ edges.
+If $G$ is a planar bipartite $n$-vertex graph with $n \ge 3$ vxs then $G$ has at most $2n - 4$ edges.
 \end{cor}
 
 \begin{cor}
@@ -652,26 +679,27 @@ $K_5$ and $K_{3,3}$ are not planar.
 The proof of Theorem 6.14 shows that
 having 3n - 6 edges in a simple n-vertex planar graph requires 2e = 3f, meaning that every face is
 a triangle. If G has some face that is not a triangle, then we can add an edge between non-adjacent
-vertices on the boundary of this face to obtain a larger plane graph. Hence the simple plane graphs
+vxs on the boundary of this face to obtain a larger plane graph. Hence the simple plane graphs
 with 3n - 6 edges, the triangulations, and the maximal plane graphs are all the same family.
 \end{rem}
 
 \subsection{Platonic Solids}
 
 \begin{defi}
-A polytope is a solid in 3 dimensions with flat faces, straight edges and sharp corners. Faces of a polytope are|oined at the edges. A polytope is convex if the line connecting any two points of the polytope lies inside the polytope.
+A polytope is a solid in 3 dimensions with flat faces, straight edges and sharp corners. Faces of a polytope are joined at the edges. A polytope is convex if the line connecting any two points of the polytope lies inside the polytope.
 \end{defi}
 \addtocounter{thm}{1}
-\begin{defi}
-A regular or Platonic solid is a convex polytope which satisfies the following:
-\begin{enumerate}
-\item all of its faces are congruent regular polygons,
-\item all vertices have the same number of faces adjacent to them.
-\end{enumerate}
-\end{defi}
- 
+%\begin{defi}
+%A regular or Platonic solid is a convex polytope which satisfies the following:
+%\begin{enumerate}
+%\item all of its faces are congruent regular polygons,
+%\item all vxs have the same number of faces adjacent to them.
+%\end{enumerate}
+%\end{defi}
+\addtocounter{thm}{1}
+
 \begin{cor}
-If $K$ is a convex polytope with $v$ vertices, $e$ edges and $f$ faces then $v - e + f = 2$.
+If $K$ is a convex polytope with $v$ vxs, $e$ edges and $f$ faces then $v - e + f = 2$.
 \end{cor}
 
 \section{Graph colouring}
@@ -686,13 +714,15 @@ $\chi(K_n) = n$
 \end{defi}
 \addtocounter{thm}{1}
 \begin{rem}
-The vertices having a given colour in a proper colouring must form an independent set, so $\chi(G)$ is the minimum number of independent sets needed to cover $V (G).$ Hence $G$ is $k$-colourable if and only if $G$ is $k$-partite. Multiple edges do not affect chromatic number. Although we define
+The vxs having a given colour in a proper colouring must form an independent set, so $\chi(G)$ is the minimum number of independent sets needed to cover $V (G).$ Hence $G$ is $k$-colourable iff $G$ is $k$-partite. Multiple edges do not affect chromatic number. Although we define
 $k$-colouring using numbers from $\{1, \dots , k\}$ as labels, the numerical values are usually unimportant, and we may use any set of size $k$ as labels.
 \end{rem}
 
-\subsection{Some motivation}
+%\subsection{Some motivation}
+\addtocounter{subsection}{1}
 \addtocounter{thm}{1}\addtocounter{thm}{1}
-\subsection{Simple bounds on the chromatic number}
+%\subsection{Simple bounds on the chromatic number}
+\subsection{Bounds on $\chi$}
 \begin{claim}
 If $H$ is a subgraph of $G$ then $\chi(H) \le \chi(G)$.
 \end{claim}
@@ -724,7 +754,7 @@ For any graphs $G_1$ and $G_2$ on the same vertex set, $\chi(G_1 \cup G_2) \le \
 \subsection{Greedy colouring}
 
 \begin{defi}
-The greedy colouring with respect to a vertex ordering $v_1, \dots , v_n$ of $V (G)$ is obtained by colouring vertices in the order $v_1, \dots , v_n$, assigning to $v_i$ the smallest-indexed colour not already used on its lower-indexed neighbours.
+The greedy colouring with respect to a vertex ordering $v_1, \dots , v_n$ of $V (G)$ is obtained by colouring vxs in the order $v_1, \dots , v_n$, assigning to $v_i$ the smallest-indexed colour not already used on its lower-indexed neighbours.
 \end{defi}
 \addtocounter{thm}{1}
 \begin{defi}
@@ -732,7 +762,7 @@ Let $G = (V,E)$ be a graph. We say that $G$ is $k$-degenerate if every subgraph 
 \end{defi}
 
 \begin{pro}
-$G$ is $k$-degenerate if and only if there is an ordering $v_1, \dots , v_n$ of the vertices of $G$ such that each $v_i$ has at most $k$ neighbours among the vertices $v_1, \dots , v_{i-1}$.
+$G$ is $k$-degenerate iff there is an ordering $v_1, \dots , v_n$ of the vxs of $G$ such that each $v_i$ has at most $k$ neighbours among the vxs $v_1, \dots , v_{i-1}$.
 \end{pro}
 
 \begin{defi}
@@ -755,7 +785,7 @@ This bound is tight if $G = K_n$ or if $G$ is an odd cycle.
 \end{rem}
 
 \begin{thm}[Brooks 1941]
-If $G$ is a connected graph other than a clique or an odd cycle, then
+If $G$ is a conn. graph other than a clique or an odd cycle, then
 $\chi(G) \le \Delta(G).$
 \end{thm}
 
@@ -777,18 +807,18 @@ colourable. (the countries of every plane map can be 4-coloured so that neighbou
 distinct colours).
 \end{thm}). 
 \addtocounter{thm}{1}
-\subsection{An application: the art gallery theorem}
+\subsection{Art gallery thm}
 
 \begin{thm}
 For any museum with $n$ walls, $\left\lfloor n=3\right\rfloor$ guards suffice.
 \end{thm}
 
-\section{More colouring results}
+\section{Col. results}
 \begin{thm}[Gallai, Roy]
 If $D$ is an orientation of $G$ with longest path length $l(D)$, then $\chi(G) \le 1 + l(D)$. Furthermore, equality holds for some orientation of $G$.
 \end{thm} 
 
-\subsection{Large girth and large chromatic number}
+\subsection{Large girth and large $\chi$}
 
 The bound $\chi(G) \ge \omega(G)$ can be tight, but (surprisingly) it can also be arbitrarily bad. There are graphs having arbitrarily large chromatic number, even though they do not contain $K_3$. Many constructions of such graphs are known, though none are trivial. We give one here.
 \addtocounter{thm}{1}
@@ -805,13 +835,13 @@ chromatic number at least k.
 \end{thm} 
 \addtocounter{thm}{2}
 \begin{thm}
-There is a tournament on $n$ vertices where any $\frac{\log_2(n)}{2}$ vertices are beaten by some other vertex.
+There is a tournament on $n$ vxs where any $\frac{\log_2(n)}{2}$ vxs are beaten by some other vertex.
 \end{thm}
-\subsection{Chromatic number and clique minors}
+\subsection{$\chi$ and clique minors}
 \begin{defi}
 Let $e = (x, y)$ be an edge of a graph $G = (V,E)$. By $G\slash e$ we denote the graph obtained from $G$ by contracting the edge $e$ into a new vertex $v_e$, which becomes adjacent to all the former neighbours of $x$ and of $y$. 
 
-$H$ is a minor of $G$ if it can be obtained from G by deleting vertices and edges, and contracting edges.
+$H$ is a minor of $G$ if it can be obtained from G by deleting vxs and edges, and contracting edges.
 \end{defi}
 \addtocounter{thm}{2}
 \begin{thm}[Mader]
@@ -847,7 +877,7 @@ Let $G$ be a simple graph with maximum degree $\Delta$. Then $\Delta(G)\le \chi0
 \subsection{List colouring}
 
 \begin{defi}
-For each vertex $v$ in a graph $G$, let $L(v)$ denote a list of colours available for $v$. A list colouring or choice function from a given collection of lists is a proper colouring $f$ such that $f(v)$ is chosen from $L(v)$. A graph $G$ is $k$-choosable or $k$-list-colourable if it has a proper list colouring from every assignment of $k$-element lists to the vertices. The list chromatic number or choosability $\chi_l(G)$ is the minimum $k$ such that $G$ is $k$-choosable.
+For each vertex $v$ in a graph $G$, let $L(v)$ denote a list of colours available for $v$. A list colouring or choice function from a given collection of lists is a proper colouring $f$ such that $f(v)$ is chosen from $L(v)$. A graph $G$ is $k$-choosable or $k$-list-colourable if it has a proper list colouring from every assignment of $k$-element lists to the vxs. The list chromatic number or choosability $\chi_l(G)$ is the minimum $k$ such that $G$ is $k$-choosable.
 \end{defi}
 
 \begin{thm}[Erdos, Rubin, Taylor 1979]
@@ -876,10 +906,10 @@ If $D$ is a kernel-perfect orientation of $G$ and $f(x) = d^-_D(x)$ for all $x \
 \section{The Matrix Tree Theorem}
 
 \begin{thm}[Cayley's formula]
-There are $n^{n-2}$ labeled trees on $n$ vertices.
+There are $n^{n-2}$ labeled trees on $n$ vxs.
 \end{thm}Cayley’s formula). 
 
-Now consider an arbitrary connected simple graph $G$ on vertex set $[n]$, and denote the number of spanning trees by $t(G)$. The following celebrated result is Kirchhoff’s matrix tree theorem. To formulate it, consider the incidence matrix $B$ of $G$ (as in Definition 1.13), and replace one of the
+Now consider an arbitrary conn. simple graph $G$ on vertex set $[n]$, and denote the number of spanning trees by $t(G)$. The following celebrated result is Kirchhoff’s matrix tree theorem. To formulate it, consider the incidence matrix $B$ of $G$ (as in Definition 1.13), and replace one of the
 two 1’s by -1 in an arbitrary manner to obtain the matrix $C$ (we say $C$ is the incidence matrix of an orientation of $G$). $ M = CC^T$ is then a symmetric $n \times n$ matrix, which is 
 
 \[
@@ -899,15 +929,16 @@ If $P$ is an $r \times s$ matrix and $Q$ is an $s \times r$ matrix with $r\le s$
 where $P_Z$ is the $r\times r$ submatrix of $P$ with column set $Z$, and $Q_Z$ is the $r\times r$ submatrix of $Q$ with the corresponding rows $Z$, and the sum is over all $r$-sets $Z \subseteq [s]$.
 \end{thm}
 
-\subsection{Lattice paths and determinants}
-see p.55 and following
+\addtocounter{subsection}{1}
+%\subsection{Lattice paths and determinants}
+%see p.55 and following
 
-\section{More Theorems on Hamiltonicity}
+\section{More Thms on Hamiltonicity}
 \begin{defi}
-The (Hamiltonian) closure of a graph $G$, denoted $C(G)$, is the supergraph of $G$ on $V (G)$ obtained by iteratively adding edges between pairs of nonadjacent vertices whose degree sum is at least $n$, until no such pair remains.
+The (Hamiltonian) closure of a graph $G$, denoted $C(G)$, is the supergraph of $G$ on $V (G)$ obtained by iteratively adding edges between pairs of nonadjacent vxs whose degree sum is at least $n$, until no such pair remains.
 \end{defi}
 \begin{thm}[Bondy Chvátal 1976]
-A simple $n$-vertex graph is Hamiltonian if and only if its closure is Hamiltonian.
+A simple $n$-vertex graph is Hamiltonian iff its closure is Hamiltonian.
 \end{thm}
 \begin{thm}[Chvátal 1972]
 Suppose $G$ has vertex degrees $d_1\le \dots d_n$. If $i < n/2$ implies
@@ -923,7 +954,7 @@ $G = K_2$).
 Let $P$ be a path in a graph $G$, say from $u$ to $v$. Given a vertex $x \in P$, we write $x^-$ for the vertex preceding $x$ on $P$, and $x^+$ for the vertex following $x$ on $P$ (whenever these exist). Similarly, for $X \subseteq V (P)$ we put $X^\pm:=\{x^\pm:x\in X\}$
 
 If $x \in P\setminus u$ is a neighbour of $u$ in $G$, then $P \cup \{(u, x)\}\setminus\{(x, x^-)\}$ (which is a path in $G$ with vertex
-set $V (P)$) is said to have been obtained from $P$ by a rotation fixing $v$. A path obtained from $P$ by a (possibly empty) sequence of rotations fixing $v$ is a path derived from $P$. The set of starting vertices of paths derived from $P$, including $u$, will be denoted by $S(P)$. As all paths derived from $P$ have the same vertex set as $P$, we have $S(P) \subseteq V (P)$.
+set $V (P)$) is said to have been obtained from $P$ by a rotation fixing $v$. A path obtained from $P$ by a (possibly empty) sequence of rotations fixing $v$ is a path derived from $P$. The set of starting vxs of paths derived from $P$, including $u$, will be denoted by $S(P)$. As all paths derived from $P$ have the same vertex set as $P$, we have $S(P) \subseteq V (P)$.
 
 \begin{rem}
 If some sequence of rotations can delete the edge $(x, x^-)$, call this edge a broken edge. Note that every interval of the original path not containing broken edges is traversed by all derived paths as a whole piece (however, the direction can change).
@@ -956,10 +987,10 @@ Every tournament has a Hamilton path.
 \end{thm}
 
 \begin{defi}
-A tournament is strongly connected if for all $u, v$ there is a directed path from $u$ to $v$.
+A tournament is strongly conn. if for all $u, v$ there is a directed path from $u$ to $v$.
 \end{defi}
 \begin{thm}
-A tournament $T$ is strongly connected if and only if it has a Hamilton cycle.
+A tournament $T$ is strongly conn. iff it has a Hamilton cycle.
 \end{thm}
 
 \section{Kuratowski’s Theorem}
@@ -977,7 +1008,7 @@ A Kuratowski graph is a graph which is a subdivision of $K_5$ or $K_{3,3}$. If $
 \end{defi}
 
 \begin{thm}[Kuratowski 1930]
-A graph is planar if and only if it has no Kuratowski subgraph.
+A graph is planar iff it has no Kuratowski subgraph.
 \end{thm}
 
 \begin{defi}
@@ -988,46 +1019,46 @@ A straightline drawing of a planar graph G is a drawing in which every edge is a
 If $G$ is a graph with no Kuratowski subgraph then $G$ has a straightline drawing in the plane.
 \end{thm}
 
-\subsection{Convex drawings of 3-connected graphs}
+\subsection{Convex drawings of 3-conn. graphs}
 
 \begin{defi}
 A convex drawing of $G$ is a straightline drawing in which every non-outer face of $G$ is a convex polygon, and the outer face is the complement of a convex polygon. (That is, the boundary of each face is the boundary of a convex polygon).
 \end{defi}
 
 \begin{thm}[Tutte 1960]
-If $G$ is a 3-connected graph which has no Kuratowski subgraphs then
-$G$ has a convex drawing in the plane with no three vertices on a line.
+If $G$ is a 3-conn. graph which has no Kuratowski subgraphs then
+$G$ has a convex drawing in the plane with no three vxs on a line.
 \end{thm}
 
 \begin{lem}[Thomassen 1980]
-Every 3-connected graph $G$ with at least five vertices has an edge
-$e$ such that $G\slash e$ is 3-connected.
+Every 3-conn. graph $G$ with at least five vxs has an edge
+$e$ such that $G\slash e$ is 3-conn.
 \end{lem}
 
 \begin{lem}
 If $G$ has no Kuratowski subgraphs, then $G\slash e$ has no Kuratowski subgraph, for any edge $e\in E(G)$.
 \end{lem}
 
-\subsection{Reducing the general case to the 3-connected case}
+\subsection{Reducing the general case to the 3-conn. case}
 
 \begin{defi}
-Given a subdivision $H'$ of $H$, we call the vertices of the original graph branch vertices.
+Given a subdivision $H'$ of $H$, we call the vxs of the original graph branch vxs.
 \end{defi}
 \addtocounter{thm}{1}
 \begin{fact}
 We make three observations. 
 \begin{enumerate}
 \item  In a Kuratowski subgraph, there are three internally vertex-disjoint paths connecting any two
-branch vertices. For $K_5$-subdivisions, we even have four such paths.
+branch vxs. For $K_5$-subdivisions, we even have four such paths.
 \item In a Kuratowski subgraph, there are four internally vertex-disjoint paths between any two pairs
-of branch vertices.
-\item Any cycle in a subdivision contains at least three branch vertices.
+of branch vxs.
+\item Any cycle in a subdivision contains at least three branch vxs.
 \end{enumerate}
 \end{fact}
 
 \begin{pro}
-Let $G$ be a graph with at least 4 vertices which has no Kuratowski subgraph, and suppose that adding an edge-joining any pair of non-adjacent vertices creates a Kuratowski subgraph.
-Then G is 3-connected.
+Let $G$ be a graph with at least 4 vxs which has no Kuratowski subgraph, and suppose that adding an edge-joining any pair of non-adjacent vxs creates a Kuratowski subgraph.
+Then G is 3-conn.
 \end{pro}
 
 \section{Ramsey Theory}
@@ -1052,7 +1083,7 @@ minimal value of $N$ for which this holds is usually denoted by $R_k(s_1, \dots 
 \begin{thm}
 Let $min\{s, t\} > 3$. Then
 $R^{(3)}(s, t) \le R(R^{(3)}(s - 1, t),R^{(3)}(s, t - 1)) + 1$
-\end{thm}:
+\end{thm}
 
 \subsection{Applications}
 
@@ -1092,7 +1123,7 @@ If $T$ is any $m$-vertex tree, then $R(T,K_n) = (m - 1)(n - 1) + 1$
 \section{Extremal problems}
 \addtocounter{thm}{1}
 \begin{defi}
-$ex(n,H)$ is the maximal value of $e(G)$ among graphs $G$ with $n$ vertices containing no $H$ as a subgraph.
+$ex(n,H)$ is the maximal value of $e(G)$ among graphs $G$ with $n$ vxs containing no $H$ as a subgraph.
 \end{defi}
 \addtocounter{thm}{1}
 \subsection{Turán’s theorem}
@@ -1119,22 +1150,22 @@ For some fixed graph $H$, we define $\pi(H) = \lim\limits_{n\to\infty} ex(n,H)/\
 
 \begin{thm}[Erdos-Stone]
 Let $H$ be a graph of chromatic number $\chi(H) = r + 1$. Then for
-every $\varepsilon > 0$ and large enough $n$, \[\left(1-\frac{1}{r}\right)\frac{n^2}{2}\le ex(n,H)\le\left(1-\frac{1}{r}\right)\frac{n^2}{2}+n^2\varepsilon\]
+every $\varepsilon > 0$ and large enough $n$, $\left(1-\frac{1}{r}\right)\frac{n^2}{2}\le ex(n,H)\le\left(1-\frac{1}{r}\right)\frac{n^2}{2}+n^2\varepsilon$
 \end{thm}
  \addtocounter{thm}{1}
 \subsection{Bipartite Turán Theorems}
 
 \begin{thm}
-If a graph $G$ on n vertices contains no 4-cycles, then $e(G)\le\left\lfloor\frac{n}{4}(1+\sqrt{4n-3})\right\rfloor$.
+If a graph $G$ on n vxs contains no 4-cycles, then $e(G)\le\left\lfloor\frac{n}{4}(1+\sqrt{4n-3})\right\rfloor$.
 \end{thm}
 \addtocounter{thm}{1}
 \begin{thm}[Kovári-Sós-Turán]
 For any integers $r \le s$, there is a constant $c$ such that every
-$K_{r,s}$-free graph on $n$ vertices contains at most $cn^{1-\frac{1}{r}}$ edges. In other words, $ex(n,K_{r,s}) \le cn^{1-\frac{1}{r}}$ 
+$K_{r,s}$-free graph on $n$ vxs contains at most $cn^{1-\frac{1}{r}}$ edges. In other words, $ex(n,K_{r,s}) \le cn^{1-\frac{1}{r}}$ 
 \end{thm}
 
 \begin{thm}
-There is $c$ depending on $k$ such that if $G$ is a graph on $n$ vertices that contains no copy of $C_{2k}$, then $G$ has at most $cn^{1+\frac{1}{k}}$ edges.
+There is $c$ depending on $k$ such that if $G$ is a graph on $n$ vxs that contains no copy of $C_{2k}$, then $G$ has at most $cn^{1+\frac{1}{k}}$ edges.
 \end{thm}
 
 \begin{que}
@@ -1148,34 +1179,34 @@ There are at most $cn^{3/2}$ pairs.
 \section{Exercises}
 \subsection{Assignment 1}
 
+
+\addtocounter{problem}{1}
+%\begin{problem}
+%Given a graph $G$ with vertex set $V = \{v_1,\dots,v_n\}$ we define the degree sequence of $G$ to be the list $d(v_1),\dots, d(v_n)$ of degrees in decreasing order.
+%\end{problem}
+
+\addtocounter{problem}{1}
+
 \begin{problem}
-Given a graph $G$ with vertex set $V = \{v_1,\dots,v_n\}$ we define the degree sequence of $G$ to be the list $d(v_1),\dots, d(v_n)$ of degrees in decreasing order.
+Prove that if a graph $G$ is not conn. then its complement $\overline{G}$ is conn. converse is not true.
 \end{problem}
 
 \begin{problem}
-
-\end{problem}
-
-\begin{problem}
-Prove that if a graph $G$ is not connected then its complement $\overline{G}$ is connected. Is the converse also true? Nope.
-\end{problem}
-
-\begin{problem}
-Show that every graph on at least two vertices contains two vertices of equal
+Show that every graph on at least two vxs contains two vxs of equal
 degree.
 \end{problem}
 
 \begin{problem}
-Prove that every graph with $n \ge 7$ vertices and at least $5n- 14$ edges contains a subgraph with minimum degree at least 6.
+Prove that every graph with $n \ge 7$ vxs and at least $5n- 14$ edges contains a subgraph with minimum degree at least 6.
 \end{problem}
 
 \begin{problem}
-Show that in a connected graph any two paths of maximum length share at least
+Show that in a conn. graph any two paths of maximum length share at least
 one vertex.
 \end{problem}
 
 \begin{problem}
-Prove that a graph is bipartite iff (if and only if) it contains no cycle of odd length.
+Prove that a graph is bipartite iff it contains no cycle of odd length.
 \end{problem}
 
 \subsection{Assignment 2}
@@ -1186,21 +1217,21 @@ vertex with even degree.
 \end{problem}
 
 \begin{problem}
-Given a graph $G$ and a vertex $v \in V (G)$, $G - v$ denotes the subgraph of $G$ induced by the vertex set $V (G)\setminus\{v\}$. Show that every connected graph $G$ of order at least two contains vertices $x$ and $y$ such that both $G- x$ and $G-y$ are connected.
+Given a graph $G$ and a vertex $v \in V (G)$, $G - v$ denotes the subgraph of $G$ induced by the vertex set $V (G)\setminus\{v\}$. Show that every conn. graph $G$ of order at least two contains vxs $x$ and $y$ such that both $G- x$ and $G-y$ are conn.
 \end{problem}
 
 \begin{problem}
-Let $T$ be an $n$-vertex tree with exactly $2k$ odd-degree vertices. Prove that $T$ decomposes into $k$ paths (i.e. its edge-set is the disjoint union of $k$ paths).
+Let $T$ be an $n$-vertex tree with exactly $2k$ odd-degree vxs. Prove that $T$ decomposes into $k$ paths (i.e. its edge-set is the disjoint union of $k$ paths).
 \end{problem}
 
 \begin{problem}
-Prove that a connected graph $G$ is a tree if and only if any family of pairwise (vertex-)intersecting paths $P_1,\dots,P_k$ in $G$ have a common vertex.
+Prove that a conn. graph $G$ is a tree iff any family of pairwise (vertex-)intersecting paths $P_1,\dots,P_k$ in $G$ have a common vertex.
 \end{problem}
 
 \begin{problem}
 \begin{enumerate}[(a)]
-\item Describe which Prüfer codes correspond to stars (i.e. to trees isomorphic to $K_{1,n-1}$).
-\item Describe what trees correspond to Prüfer codes containing exactly 2 different values.
+\item Prüfer codes corresponding to stars (i.e. to trees isomorphic to $K_{1,n-1}$) = 1 value.
+\item Prüfer codes containing exactly 2 different values = 2 connected stars
 \end{enumerate}
 \end{problem}
 
@@ -1211,44 +1242,43 @@ Let $T$ be a forest on vertex set $[n]$ with components $T_1,\dots,T_r$. Prove, 
 \subsection{Assignment 3}
 
 \begin{problem}
-Prove that a connected graph $G$ is $k$-edge-connected if and only if each block of $G$ is $k$-edge-connected.
+Prove that a conn. graph $G$ is $k$-edge-conn. iff each block of $G$ is $k$-edge-conn.
 \end{problem}
 
 \begin{problem}
-Let $G$ be a graph and suppose some two vertices $u, v \in V (G)$ are separated by $X \subseteq V (G)\setminus\{u,v\}$. Show that $X$ is a minimal separating set (i.e. there is no proper subset $Y$ ( $X$ that separates $u$ and $v$) if and only if every vertex in $X$ has a neighbor in the component
+Let $G$ be a graph and suppose some two vxs $u, v \in V (G)$ are separated by $X \subseteq V (G)\setminus\{u,v\}$. Show that $X$ is a minimal separating set (i.e. there is no proper subset $Y$ ( $X$ that separates $u$ and $v$) iff every vertex in $X$ has a neighbor in the component
 of $G-X$ containing $u$ and another in the component containing $v$.
 \end{problem}
 
 \begin{problem}
-Show that if $G$ is a graph with $|V (G)| = n \ge k + 1$ and $\delta(G) \ge(n + k-2)/2$ then $G$ is $k$-connected.
+Show that if $G$ is a graph with $|V (G)| = n \ge k + 1$ and $\delta(G) \ge(n + k-2)/2$ then $G$ is $k$-conn.
 \end{problem}
 
 \begin{problem}
-Prove that a graph $G$ with at least 3 vertices is 2-connected if and only if for any three vertices $x, y, z$ there is a path from $x$ to $z$ containing $y$.
+Prove that a graph $G$ with at least 3 vxs is 2-conn. iff for any three vxs $x, y, z$ there is a path from $x$ to $z$ containing $y$.
 \end{problem}
 
 \begin{problem}
-Let $G$ be a $k$-connected graph, where $k \ge 2$. Show that if $|V (G)| \ge 2k$ then $G$ contains a cycle of length at least $2k$.
+Let $G$ be a $k$-conn. graph, where $k \ge 2$. Show that if $|V (G)| \ge 2k$ then $G$ contains a cycle of length at least $2k$.
 \end{problem}
 
 \subsection{Assignment 4}
 
 \begin{problem}
-Show that if $k > 0$ then the edge set of any connected graph with $2k$ vertices of odd degree can be split into $k$ trails.
+Show that if $k > 0$ then the edge set of any conn. graph with $2k$ vxs of odd degree can be split into $k$ trails.
 \end{problem}
 
 \begin{problem}
-Let $G$ be a connected graph that has an Euler tour. Prove or disprove the
-following statements.
+Let $G$ be a conn. graph that has an Euler tour. T / F?
 \begin{enumerate}[(a)]
-\item If $G$ is bipartite then it has an even number of edges.
-\item If $G$ has an even number of vertices then it has an even number of edges.
-\item For edges $e$ and $f$ sharing a vertex, $G$ has an Euler tour in which $e$ and $f$ appear consecutively.
+\item If $G$ is bipartite then it has an even number of edges. T
+\item If $G$ has an even number of vxs then it has an even number of edges. F
+\item For edges $e$ and $f$ sharing a vertex, $G$ has an Euler tour in which $e$ and $f$ appear consecutively. F
 \end{enumerate}
 \end{problem}
 
 \begin{problem}
-Let $G$ be a connected graph on n vertices with minimum degree $\delta$. Show that 
+Let $G$ be a conn. graph on n vxs with minimum degree $\delta$. Show that 
 \begin{enumerate}[(a)]
 \item if $\delta \le \frac{n-1}{2}$ then $G$ contains a path of length $2\delta$, and
 \item if $\delta \ge \frac{n-1}{2}$ then $G$ contains a Hamiltonian path.
@@ -1257,19 +1287,19 @@ Let $G$ be a connected graph on n vertices with minimum degree $\delta$. Show th
 
 \begin{problem}
 Show that the maximum number of edges in a non-Hamiltonian graph on $n \ge 3$
-vertices is $\binom{n-2}{1}+1$.
+vxs is $\binom{n-2}{1}+1$.
 \end{problem}
 
 \subsection{Assignment 5}
 
 \begin{problem}
-Let $G$ be a connected graph on more than 2 vertices such that every edge is
-contained in some perfect matching of $G$. Show that $G$ is 2-edge-connected.
+Let $G$ be a conn. graph on more than 2 vxs such that every edge is
+contained in some perfect matching of $G$. Show that $G$ is 2-edge-conn.
 \end{problem}
 
 \begin{problem}
 \begin{enumerate}[(a)]
-\item Let $G$ be a graph on $2n$ vertices that has exactly one perfect matching. Show that $G$ has at most $n^2$ edges.
+\item Let $G$ be a graph on $2n$ vxs that has exactly one perfect matching. Show that $G$ has at most $n^2$ edges.
 \item Construct such a $G$ containing exactly $n^2$ edges for any $n \in N$.
 \end{enumerate}
 \end{problem}
@@ -1290,14 +1320,15 @@ flipping the edges along $P$ (in other words, taking the symmetric difference of
 \end{problem}
 
 \begin{problem}
-Show that for $k\ge 1$, every $k$-regular ($k- 1$)-edge-connected graph on an even number of vertices contains a perfect matching.
+Show that for $k\ge 1$, every $k$-regular ($k- 1$)-edge-conn. graph on an even number of vxs contains a perfect matching.
 \end{problem}
 
 \subsection{Assignment 6}
 
-\begin{problem}
-Determine all positive integers $r$ and $s$, with $r \le s$, for which $K_{r,s}$ is planar.
-\end{problem}
+\addtocounter{problem}{1}
+%\begin{problem}
+%Determine all positive integers $r$ and $s$, with $r \le s$, for which $K_{r,s}$ is planar.
+%\end{problem}
 
 \begin{problem}
 \begin{enumerate}[(a)]
@@ -1307,15 +1338,15 @@ Determine all positive integers $r$ and $s$, with $r \le s$, for which $K_{r,s}$
 \end{problem}
 
 \begin{problem}
-Show that a connected plane graph $G$ is bipartite iff all its faces have even length.
+Show that a conn. plane graph $G$ is bipartite iff all its faces have even length.
 \end{problem}
 
 \begin{problem}
-Let $G$ be a graph on $n\ge 3$ vertices and $3n- 6 + k$ edges for some $k > 0$. Show that any drawing of $G$ in the plane contains at least $k$ crossing pairs of edges.
+Let $G$ be a graph on $n\ge 3$ vxs and $3n- 6 + k$ edges for some $k > 0$. Show that any drawing of $G$ in the plane contains at least $k$ crossing pairs of edges.
 \end{problem}
 
 \begin{problem}
-Let $G$ be a plane graph with triangular faces and suppose the vertices are colored arbitrarily with three colors. Prove that there is an even number of faces that get all three colors.
+Let $G$ be a plane graph with triangular faces and suppose the vxs are colored arbitrarily with three colors. Prove that there is an even number of faces that get all three colors.
 \end{problem}
 
 \begin{problem}
@@ -1325,11 +1356,11 @@ Let $S$ be a set of $n\ge 3$ points in the plane such that any two of them have 
 \subsection{Assignment 7}
 
 \begin{problem}
-Are the following statements true?
+T / F?
 \begin{enumerate}[(a)]
-\item If $G$ and $H$ are graphs on the same vertex set, then $dg(G \cup H)\le dg(G) + dg(H)$.
-\item If $G$ and $H$ are graphs on the same vertex set, then $\chi(G \cup H) \le \chi(G) + \chi(H)$.
-\item Every graph $G$ has a $\chi(G)$-coloring where $\alpha(G)$ vertices get the same color.
+\item If $G$ and $H$ are graphs on the same vertex set, then $dg(G \cup H)\le dg(G) + dg(H)$. F
+\item If $G$ and $H$ are graphs on the same vertex set, then $\chi(G \cup H) \le \chi(G) + \chi(H)$. F
+\item Every graph $G$ has a $\chi(G)$-coloring where $\alpha(G)$ vxs get the same color. F
 \end{enumerate}
 \end{problem}
 
@@ -1338,7 +1369,7 @@ $G$ has the property that any two odd cycles in it intersect (they share at leas
 \end{problem}
 
 \begin{problem}
-For a vertex $v$ in a connected graph $G$, let $G_r$ be the subgraph of $G$ induced by the vertices at distance $r$ from $v$. Show that $\chi(G) \le max_{0\le r\le n}\chi(G_r) + \chi(G_{r+1})$.
+For a vertex $v$ in a conn. graph $G$, let $G_r$ be the subgraph of $G$ induced by the vxs at distance $r$ from $v$. Show that $\chi(G) \le max_{0\le r\le n}\chi(G_r) + \chi(G_{r+1})$.
 \end{problem}
 
 \begin{problem}
@@ -1352,7 +1383,7 @@ Suppose the complement of $G$ is bipartite. Show that $\chi(G) = \omega(G).$
 \subsection{Assignment 8}
 
 \begin{problem}
-For a given natural number $n$, let $G_n$ be the following graph with $\binom{n}{2}$ vertices and $\binom{n}{3}$ edges: the vertices are the pairs $(x, y)$ of integers with $1\le x < y \le n$, and for each triple $(x, y, z)$ with $1\le x < y < z\le n$, there is an edge joining vertex $(x, y)$ to vertex $(y, z)$. Show that for any natural number $k$, the graph $G_n$ is triangle-free and has chromatic number $\chi(G_n) > k$ provided $n > 2k$.
+For a given natural number $n$, let $G_n$ be the following graph with $\binom{n}{2}$ vxs and $\binom{n}{3}$ edges: the vxs are the pairs $(x, y)$ of integers with $1\le x < y \le n$, and for each triple $(x, y, z)$ with $1\le x < y < z\le n$, there is an edge joining vertex $(x, y)$ to vertex $(y, z)$. Show that for any natural number $k$, the graph $G_n$ is triangle-free and has chromatic number $\chi(G_n) > k$ provided $n > 2k$.
 \end{problem}
 
 \begin{problem}
@@ -1365,7 +1396,7 @@ Find the edge-chromatic number of $K_n$ (don't use Vizing's theorem).
 \end{problem}
 
 \begin{problem}
-Let $G$ be a connected $k$-regular bipartite graph with $k\ge 2$. Show, using König's theorem, that $G$ is 2-connected.
+Let $G$ be a conn. $k$-regular bipartite graph with $k\ge 2$. Show, using König's theorem, that $G$ is 2-conn.
 \end{problem}
 
 \subsection{Assignment 9}
@@ -1384,7 +1415,7 @@ Show that $\chi(C_n) = \chi_l(C_n)$ for any $n \ge 3$.
 \end{problem}
 
 \begin{problem}
-Let $G$ be a bipartite graph on $n$ vertices. Prove that $\chi_l(G)\le 1 + \log_2(n)$ using the probabilistic method.
+Let $G$ be a bipartite graph on $n$ vxs. Prove that $\chi_l(G)\le 1 + \log_2(n)$ using the probabilistic method.
 \end{problem}
 
 \begin{problem}
@@ -1394,19 +1425,19 @@ Let $G$ be a complete $r$-partite graph with all parts of size 2. (In other word
 \subsection{Assignment 10}
 
 \begin{problem}
-How many spanning trees does $K_{r,s}$ have?
+How many spanning trees does $K_{r,s}$ have? $r^{s-1}s^{r-1}$
 \end{problem}
 
 \begin{problem}
-Find the number of spanning trees of $K_n- e$ (the complete graph on n vertices with one edge removed) in two different ways:
-\begin{enumerate}[(a)]
-\item using the Matrix Tree Theorem, and 
-\item using a double counting argument.
-\end{enumerate} 
+Find the number of spanning trees of $K_n- e$ (the complete graph on n vxs with one edge removed): $(n-2)n^{n-3}$
+%\begin{enumerate}[(a)]
+%\item using the Matrix Tree Theorem, and 
+%\item using a double counting argument.
+%\end{enumerate} 
 \end{problem}
 
 \begin{problem}
-In this exercise we prove the following alternative form of the matrix-tree theorem. For an $n$-vertex connected graph $G$, the number of spanning trees in $G$ is equal to the product of the  nonzero eigenvalues of the Laplacian matrix $M$ of $G$, divided by $n$. (This matrix $M$ is as in the lecture notes).
+In this exercise we prove the following alternative form of the matrix-tree theorem. For an $n$-vertex conn. graph $G$, the number of spanning trees in $G$ is equal to the product of the  nonzero eigenvalues of the Laplacian matrix $M$ of $G$, divided by $n$. (This matrix $M$ is as in the lecture notes).
 \end{problem}
 
 \begin{problem}
@@ -1419,19 +1450,19 @@ In this exercise we prove the following alternative form of the matrix-tree theo
 \subsection{Assignment 11}
 
 \begin{problem}
-For each of the following decide whether they are true (with justification) or false (by providing a counterexample).
+T / F?
 \begin{enumerate}[(a)]
-\item If every vertex of a tournament has positive in- and out-degree, then the tournament contains a directed Hamilton cycle. NOPE
-\item If a tournament has a directed cycle, then it has a directed triangle. YES
+\item If every vertex of a tournament has positive in- and out-degree, then the tournament contains a directed Hamilton cycle. F
+\item If a tournament has a directed cycle, then it has a directed triangle. T
 \end{enumerate} 
 \end{problem}
 
 \begin{problem}
-Let $G$ be a graph on $n \ge 3$ vertices with at least $\alpha(G)$ vertices of degree $n- 1$. Show that $G$ is Hamiltonian.
+Let $G$ be a graph on $n \ge 3$ vxs with at least $\alpha(G)$ vxs of degree $n- 1$. Show that $G$ is Hamiltonian.
 \end{problem}
 
 \begin{problem}
-Suppose $G$ is a graph on $n$ vertices where all the degrees are at least $\frac{n+q}{2}$. Show that any set $F$ of $q$ independent edges is contained in a Hamiltonian cycle.
+Suppose $G$ is a graph on $n$ vxs where all the degrees are at least $\frac{n+q}{2}$. Show that any set $F$ of $q$ independent edges is contained in a Hamiltonian cycle.
 \end{problem}
 
 \subsection{Assignment 12}
@@ -1449,7 +1480,7 @@ Prove that for every $k \ge 2$ there exists an integer $N$ such that every color
 \end{problem}
 
 \begin{problem}
-Prove the following strengthening of Schur's theorem: for every $k\ge 2$ there is an $N$ such that any $k$-coloring of $[N]$ contains three distinct integers $a, b, c$ of the same color satisfying $a + b = c.$
+For every $k\ge 2$ there is an $N$ such that any $k$-coloring of $[N]$ contains three distinct integers $a, b, c$ of the same color satisfying $a + b = c.$
 \end{problem}
 
 \begin{problem}
@@ -1467,7 +1498,7 @@ Let $H$ be an arbitrary fixed graph and prove that the sequence $ex(n,H)/\binom{
 \end{problem}
 
 \begin{problem}
-Imitate the proof of Turan's theorem to show that among all the $n$-vertex $K_{r+1}$-free graphs, the Turan graph $T_{n,r}$ contains the maximum number of triangles (for any $r, n \ge 1$).
+Among all the $n$-vertex $K_{r+1}$-free graphs, the Turan graph $T_{n,r}$ contains the maximum number of triangles (for any $r, n \ge 1$).
 \end{problem}
 
 \begin{problem}
