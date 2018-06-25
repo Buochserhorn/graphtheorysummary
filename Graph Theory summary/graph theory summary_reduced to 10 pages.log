@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.14)  25 JUN 2018 11:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.14)  25 JUN 2018 13:26
 entering extended mode
 **"./graph theory summary_reduced to 10 pages.tex"
 ("graph theory summary_reduced to 10 pages.tex"
@@ -1345,27 +1345,27 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
  ("graph theory summary_reduced to 10 pages.aux")
 \openout1 = `"graph theory summary_reduced to 10 pages.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 112.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 117.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 117.
 
 
 ("C:\Users\Janosch Ott\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.
 fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    ... okay on input line 117.
 \c@lstlisting=\count181
 
 ("C:\Users\Janosch Ott\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-
@@ -1484,409 +1484,310 @@ Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.16} (current compat level: 1.12).
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--145
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
 |[]\OT1/cmr/bx/n/12 Graph iso-mor-
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 148.
+LaTeX Font Info:    Try loading font information for U+msa on input line 153.
 
 ("C:\Users\Janosch Ott\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\ums
 a.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 148.
+LaTeX Font Info:    Try loading font information for U+msb on input line 153.
 
 ("C:\Users\Janosch Ott\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\ums
 b.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 5771) in paragraph at lines 152--158
+Underfull \hbox (badness 5771) in paragraph at lines 157--163
 []\OT1/cmr/m/it/10.95 Rem \OT1/cmr/m/n/10.95 1.8\OT1/cmr/m/it/10.95 . []\OT1/cm
 r/m/n/10.95 Iso-mor-phism is
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
-[]\OT1/cmr/bx/n/10.95 Def 1.9.[]\OT1/cmr/m/n/10.95 An un-la-belled
- []
-
-
-Underfull \hbox (badness 5316) in paragraph at lines 162--163
-\OT1/cmr/m/n/10.95 graph is an iso-mor-phism
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--165
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
 |[]\OT1/cmr/bx/n/12 The ad-ja-cency
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
-\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 v[]; [] ; v[]\OMS/cmsy/m/n/10.95 g$ \O
-T1/cmr/m/n/10.95 and $\OML/cmm/m/it/10.95 E \OT1/cmr/m/n/10.95 =
  []
 
 [1
 
 {C:/Users/Janosch Ott/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
-[]\OT1/cmr/bx/n/10.95 Def 2.7.[]\OT1/cmr/m/n/10.95 Given a conn.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 347--348
-[]\OT1/cmr/m/it/10.95 Every conn.
+Underfull \hbox (badness 10000) in paragraph at lines 393--394
+[]\OT1/cmr/bx/n/10.95 Prop 3.3.[]\OT1/cmr/m/it/10.95 For ev-ery $\OML/cmm/m/it/
+10.95 G$\OT1/cmr/m/it/10.95 ,
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 481--483
-\OT1/cmr/m/it/10.95 disjoint paths be-tween
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 498--499
-[]\OT1/cmr/bx/n/10.95 Thm 4.5.[]\OT1/cmr/m/it/10.95 A conn.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 502--503
+Underfull \hbox (badness 10000) in paragraph at lines 509--510
 []\OT1/cmr/bx/n/10.95 Lem 4.6.[]\OT1/cmr/m/it/10.95 Ev-ery max-i-mal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 509--509
+Underfull \hbox (badness 10000) in paragraph at lines 516--516
 |[]\OT1/cmr/bx/n/12 Hamilton paths
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 577--578
-[]\OT1/cmr/bx/n/10.95 Cor 5.10.[]\OT1/cmr/m/it/10.95 Ev-ery reg-u-lar
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 589--590
+Underfull \hbox (badness 10000) in paragraph at lines 596--597
 []\OT1/cmr/bx/n/10.95 Cor 5.13.[]\OT1/cmr/m/it/10.95 A col-lec-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 597--597
+Underfull \hbox (badness 10000) in paragraph at lines 604--604
 |[]\OT1/cmr/bx/n/12 Matchings in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 597--597
+Underfull \hbox (badness 10000) in paragraph at lines 604--604
 \OT1/cmr/bx/n/12 gen-eral graphs:
  []
 
-
-Underfull \hbox (badness 6220) in paragraph at lines 679--684
+[3]
+Underfull \hbox (badness 6220) in paragraph at lines 686--691
 []\OT1/cmr/m/it/10.95 Rem \OT1/cmr/m/n/10.95 6.17 (Max-i-mal pla-
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 765--766
+Underfull \hbox (badness 5787) in paragraph at lines 750--751
+\OT1/cmr/m/n/10.95 vx set, $\OML/cmm/m/it/10.95 \OT1/cmr/m/n/10.95 (\OML/cmm/m
+/it/10.95 G[] \OMS/cmsy/m/n/10.95 [ \OML/cmm/m/it/10.95 G[]\OT1/cmr/m/n/10.95 )
+ \OMS/cmsy/m/n/10.95 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 772--773
 \OT1/cmr/m/it/10.95 iff there is an or-der-ing
  []
 
 
-Underfull \hbox (badness 5091) in paragraph at lines 833--835
+Underfull \hbox (badness 7081) in paragraph at lines 805--806
+\OT1/cmr/m/it/10.95 5-degenerate and thus 6-
+ []
+
+
+Underfull \hbox (badness 5091) in paragraph at lines 840--842
 []\OT1/cmr/bx/n/10.95 Thm 8.5 \OT1/cmr/m/n/10.95 (Er-dos 1959)\OT1/cmr/bx/n/10.
 95 .
  []
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 856--858
+
+Underfull \hbox (badness 10000) in paragraph at lines 863--865
 []\OT1/cmr/bx/n/10.95 Def 8.14.[]\OT1/cmr/m/n/10.95 A $\OML/cmm/m/it/10.95 k$\O
 T1/cmr/m/n/10.95 -edge-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 856--858
-\OT1/cmr/m/n/10.95 shar-ing a ver-tex re-ceive
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 856--858
+Underfull \hbox (badness 10000) in paragraph at lines 863--865
 \OT1/cmr/m/n/10.95 dif-fer-ent colours, equiv-a-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 862--863
+Underfull \hbox (badness 10000) in paragraph at lines 869--870
 []\OT1/cmr/m/n/10.95 An edge-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 863--864
-\OT1/cmr/m/n/10.95 i-mum de-gree $$ has
- []
-
-
-Underfull \hbox (badness 5756) in paragraph at lines 873--874
-\OT1/cmr/m/it/10.95 i-mum de-gree $\OT1/cmr/m/n/10.95 $\OT1/cmr/m/it/10.95 . T
-hen
- []
-
-
-Underfull \hbox (badness 5637) in paragraph at lines 884--885
+[5]
+Underfull \hbox (badness 5637) in paragraph at lines 891--892
 []\OT1/cmr/bx/n/10.95 Thm 8.20 \OT1/cmr/m/n/10.95 (Er-dos, Ru-
  []
 
 
-Underfull \hbox (badness 5331) in paragraph at lines 888--890
+Underfull \hbox (badness 5331) in paragraph at lines 895--897
 \OT1/cmr/m/n/10.95 in-dex or edge-choosability
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 906--906
+Underfull \hbox (badness 10000) in paragraph at lines 913--913
 |[]\OT1/cmr/bx/n/14.4 The Ma-trix
  []
 
 
-Underfull \hbox (badness 5519) in paragraph at lines 909--910
+Underfull \hbox (badness 5519) in paragraph at lines 916--917
 []\OT1/cmr/bx/n/10.95 Thm 9.1 \OT1/cmr/m/n/10.95 (Cay-ley's for-
  []
 
 
-Overfull \hbox (8.52007pt too wide) detected at line 928
+Overfull \hbox (8.52007pt too wide) detected at line 935
 $\OML/cmm/m/it/10.95 det\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 PQ\OT1/cmr/m/n/
 10.95 ) = [](\OML/cmm/m/it/10.95 detP[]\OT1/cmr/m/n/10.95 )(\OML/cmm/m/it/10.95
  detQ[]\OT1/cmr/m/n/10.95 )$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 938--939
+Underfull \hbox (badness 10000) in paragraph at lines 945--946
 []\OT1/cmr/bx/n/10.95 Def 10.1.[]\OT1/cmr/m/n/10.95 The (Hamil-to-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 941--942
-\OT1/cmr/m/n/10.95 1976)\OT1/cmr/bx/n/10.95 .[]\OT1/cmr/m/it/10.95 A sim-ple $\
-OML/cmm/m/it/10.95 n$\OT1/cmr/m/it/10.95 -vertex
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 941--942
-\OT1/cmr/m/it/10.95 graph is Hamil-to-nian iff
- []
-
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 996--996
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
 |[]\OT1/cmr/bx/n/14.4 Kuratowski's
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1007--1008
-[]\OT1/cmr/bx/n/10.95 Def 11.4.[]\OT1/cmr/m/n/10.95 A Ku-ra-towski
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1011--1012
+Underfull \hbox (badness 10000) in paragraph at lines 1018--1019
 []\OT1/cmr/bx/n/10.95 Thm 11.5 \OT1/cmr/m/n/10.95 (Ku-ra-towski
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1015--1016
+Underfull \hbox (badness 10000) in paragraph at lines 1022--1023
 []\OT1/cmr/bx/n/10.95 Def 11.6.[]\OT1/cmr/m/n/10.95 A straight-line
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1022--1022
+Underfull \hbox (badness 10000) in paragraph at lines 1029--1029
 |[]\OT1/cmr/bx/n/12 Convex draw-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1034--1036
+Underfull \hbox (badness 10000) in paragraph at lines 1041--1043
 []\OT1/cmr/bx/n/10.95 Lem 11.10 \OT1/cmr/m/n/10.95 (Thomassen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1042--1042
+Underfull \hbox (badness 10000) in paragraph at lines 1049--1049
 |[]\OT1/cmr/bx/n/12 Reducing the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1051--1053
-\OT1/cmr/m/n/10.95 paths con-nect-ing any
- []
-
-[7]
-Underfull \hbox (badness 7907) in paragraph at lines 1064--1064
+Underfull \hbox (badness 7907) in paragraph at lines 1071--1071
 |[]\OT1/cmr/bx/n/14.4 Ramsey The-
  []
 
 
-Underfull \hbox (badness 7116) in paragraph at lines 1079--1081
+Underfull \hbox (badness 7116) in paragraph at lines 1086--1088
 []\OT1/cmr/bx/n/10.95 Thm 12.3.[]\OT1/cmr/m/it/10.95 Given $\OML/cmm/m/it/10.95
  k$ \OT1/cmr/m/it/10.95 and
  []
 
 
-Underfull \hbox (badness 6348) in paragraph at lines 1079--1081
+Underfull \hbox (badness 6348) in paragraph at lines 1086--1088
 \OT1/cmr/m/it/10.95 colour-ing of $\OML/cmm/m/it/10.95 K[]$ \OT1/cmr/m/it/10.95
  with $\OML/cmm/m/it/10.95 k$
  []
 
 
-Underfull \hbox (badness 7981) in paragraph at lines 1084--1086
+Underfull \hbox (badness 7981) in paragraph at lines 1091--1093
 \OT1/cmr/m/n/10.95 3$\OT1/cmr/m/it/10.95 . Then $\OML/cmm/m/it/10.95 R[]\OT1/cm
 r/m/n/10.95 (\OML/cmm/m/it/10.95 s; t\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1101--1102
+Underfull \hbox (badness 10000) in paragraph at lines 1108--1109
 []\OT1/cmr/bx/n/10.95 Thm 12.7.[]\OT1/cmr/m/it/10.95 We have
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1104--1104
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 1111--1111
 |[]\OT1/cmr/bx/n/12 Ramsey the-ory
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1110--1110
+Underfull \hbox (badness 10000) in paragraph at lines 1117--1117
 |[]\OT1/cmr/bx/n/12 Graph Ram-sey
  []
 
 
-Underfull \hbox (badness 5288) in paragraph at lines 1112--1113
+Underfull \hbox (badness 5288) in paragraph at lines 1119--1120
 []\OT1/cmr/bx/n/10.95 Def 12.9.[]\OT1/cmr/m/n/10.95 Let $\OML/cmm/m/it/10.95 G[
 ]; G[]$ \OT1/cmr/m/n/10.95 be
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1116--1117
+Underfull \hbox (badness 10000) in paragraph at lines 1123--1124
 []\OT1/cmr/m/it/10.95 Rem \OT1/cmr/m/n/10.95 12.10\OT1/cmr/m/it/10.95 . []\OT1/
 cmr/m/n/10.95 Note that
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1123--1123
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1130
 |[]\OT1/cmr/bx/n/14.4 Extremal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1140--1141
+Underfull \hbox (badness 10000) in paragraph at lines 1147--1148
 []\OT1/cmr/m/it/10.95 Question \OT1/cmr/m/n/10.95 13.6\OT1/cmr/m/it/10.95 . []\
 OT1/cmr/m/n/10.95 Let
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1159--1160
-[]\OT1/cmr/bx/n/10.95 Thm 13.11.[]\OT1/cmr/m/it/10.95 If a graph
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1159--1160
-\OT1/cmr/m/it/10.95 4-cycles, then $\OML/cmm/m/it/10.95 e\OT1/cmr/m/n/10.95 (\O
-ML/cmm/m/it/10.95 G\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1163--1165
+Underfull \hbox (badness 10000) in paragraph at lines 1170--1172
 []\OT1/cmr/bx/n/10.95 Thm 13.13
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1163--1165
-\OT1/cmr/m/it/10.95 con-tains at most $\OML/cmm/m/it/10.95 cn[]$
- []
-
-
-Underfull \hbox (badness 5622) in paragraph at lines 1163--1165
-\OT1/cmr/m/it/10.95 edges. In other words,
- []
-
-
-Underfull \hbox (badness 7944) in paragraph at lines 1172--1173
+Underfull \hbox (badness 7944) in paragraph at lines 1179--1180
 []\OT1/cmr/m/it/10.95 Question \OT1/cmr/m/n/10.95 13.15\OT1/cmr/m/it/10.95 . []
 \OT1/cmr/m/n/10.95 Given $\OML/cmm/m/it/10.95 n$
  []
 
+
+Underfull \hbox (badness 6775) in paragraph at lines 1240--1241
+\OT1/cmr/m/n/10.95 spond-ing to stars (i.e.
+ []
+
+
+Underfull \hbox (badness 6526) in paragraph at lines 1240--1241
+\OT1/cmr/m/n/10.95 to trees iso-mor-phic to
+ []
+
+
+Underfull \hbox (badness 5331) in paragraph at lines 1241--1242
+[]\OT1/cmr/m/n/10.95 Prufer codes con-tain-ing
+ []
+
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1229
-\OT1/cmr/m/n/10.95 graph $\OML/cmm/m/it/10.95 G$ \OT1/cmr/m/n/10.95 is a tree i
-ff
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1229
-\OT1/cmr/m/n/10.95 any fam-ily of pair-wise
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1229
-\OT1/cmr/m/n/10.95 (vertex-)intersecting paths
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1308--1310
+Underfull \hbox (badness 10000) in paragraph at lines 1315--1317
 []\OT1/cmr/m/n/10.95 finite set with sub-sets
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1335--1336
-[]\OT1/cmr/m/n/10.95 Show that ev-ery
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 1363--1364
-\OML/cmm/m/it/10.95 \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 G\OT1/cmr/m/n/10.9
-5 )$-coloring where
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1395--1396
+Underfull \hbox (badness 10000) in paragraph at lines 1402--1403
 []\OT1/cmr/m/it/10.95 P \OT1/cmr/m/n/10.95 3\OT1/cmr/m/it/10.95 . []\OT1/cmr/m/
 n/10.95 Find the edge-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1405--1406
-[]\OT1/cmr/m/it/10.95 P \OT1/cmr/m/n/10.95 1\OT1/cmr/m/it/10.95 . []\OT1/cmr/m/
-n/10.95 Prove that ev-ery
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1413
+\OT1/cmr/m/n/10.95 of max-i-mum de-gree $$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1405--1406
+Underfull \hbox (badness 8094) in paragraph at lines 1412--1413
+\OT1/cmr/m/n/10.95 edge-coloring, i.e. one
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1413
+\OT1/cmr/m/n/10.95 where each color class
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1413
 \OT1/cmr/m/n/10.95 con-tains $[]$ or
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1428--1429
+Underfull \hbox (badness 10000) in paragraph at lines 1435--1436
 []\OT1/cmr/m/it/10.95 P \OT1/cmr/m/n/10.95 1\OT1/cmr/m/it/10.95 . []\OT1/cmr/m/
 n/10.95 How many span-
  []
 
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 1488--1489
-\OT1/cmr/m/n/10.95 an in-te-ger. Show
+
+Underfull \hbox (badness 10000) in paragraph at lines 1495--1496
+\OT1/cmr/m/n/10.95 creas-ing or de-creas-ing)
  []
 
-
-Underfull \hbox (badness 6995) in paragraph at lines 1488--1489
-\OT1/cmr/m/n/10.95 that any se-quence of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1489--1491
-\OT1/cmr/m/n/10.95 num-bers $\OML/cmm/m/it/10.95 a[]; [] ; a[]$
- []
-
-
-Underfull \hbox (badness 6268) in paragraph at lines 1489--1491
-\OT1/cmr/m/n/10.95 tone de-creas-ing sub-se-
- []
-
-[11] ("graph theory summary_reduced to 10 pages.aux") ) 
+[10] ("graph theory summary_reduced to 10 pages.aux") ) 
 Here is how much of TeX's memory you used:
  27229 strings out of 493305
  658300 string characters out of 3127190
- 858396 words of memory out of 3000000
+ 871396 words of memory out of 3000000
  30288 multiletter control sequences out of 15000+200000
  11780 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,11n,96p,1060b,718s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,11n,96p,1060b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Janosch Ott\A
 ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcti1095.pk><C:/User
 s/Janosch Ott/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
@@ -1907,10 +1808,10 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Janosch Ott/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Us
 ers/Janosch Ott/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/s
 ymbols/msbm10.pfb>
-Output written on "graph theory summary_reduced to 10 pages.pdf" (11 pages, 263
-303 bytes).
+Output written on "graph theory summary_reduced to 10 pages.pdf" (10 pages, 261
+894 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
+ 99 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
