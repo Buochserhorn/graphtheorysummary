@@ -11,7 +11,10 @@
 %	vx = vertex
 %	vxs = vertices
 %	G = graph G
+%	gr. = graph
 %	# = number of
+%	conn. = connected
+%	iff = if and only if
 
 
 
@@ -326,12 +329,12 @@ Every finite tree with at least two vxs has at least two leaves. Deleting a leaf
 \subsection{Equivalent definitions of trees}
 
 \begin{thm}
-For an n-vx simple $G$ (with $n \ge 1$), the following are equivalent (and
-characterize the trees with n vxs).
-(a) G is conn. and has no cycles.
-(b) G is conn. and has n - 1 edges.
-(c) G has n - 1 edges and no cycles.
-(d) For every pair u, v 2 V (G), there is exactly one u, v-path in G.
+For an $n$-vx simple $G$ (with $n \ge 1$), the following are equivalent (and
+characterize the trees with $n$ vxs).
+(a) $G$ is conn. and has no cycles.
+(b) $G$ is conn. and has $n - 1$ edges.
+(c) $G$ has $n - 1$ edges and no cycles.
+(d) For every pair $u, v \in V (G)$, there is exactly one $u, v$-path in $G$.
 \end{thm}
 
 \begin{defi}
@@ -405,6 +408,7 @@ Every gr. of average degree at least $4k$ has a $k$-conn. subgraph.
 A disconnecting set of edges is a set $F \subseteq E(G)$ such that $G\setminus F$ has more than one component. Given $S$, $T \subset V (G)$, the notation $[S, T]$ specifies the set of edges having one endpoint
 in $S$ and the other in $T$. An edge cut is an edge set of the form $[S, S]$, where $S$ is a non-empty proper subset of $V (G)$. A gr. is $k$-edge-conn. if every disconnecting set has at least $k$ edges.
 The edge-connectivity of $G$, written $\kappa'(G)$, is the minimum size of a disconnecting set. One edge disconnecting G is called a bridge.
+
 $G = Kn: \kappa'(G) = n - 1.$
 \end{defi}
 \addtocounter{thm}{1}
@@ -603,8 +607,8 @@ matching in $G$ equals the minimum size of a vx cover of $G$.
 
 \subsection{Matchings in general graphs: Tutte’s Theorem}
 Given a $G$, let $q(G)$ denote the \# its odd components, i.e. the ones of odd order. If G has a perfect matching then clearly
-$q(G\setminus S) \le|S|for all S \subseteq V (G)$
-since every odd component of GnS will send an edge of the matching to S, and each such edge covers a different vx in S.
+$q(G\setminus S) \le|S| \forall S \subseteq V (G)$
+since every odd component of $G\setminus S$ will send an edge of the matching to $S$, and each such edge covers a different vx in $S$.
 
 \begin{thm}[Tutte 1947]
 A $G$ has a perfect matching iff $q(G\setminus S) \le|S|$ for
@@ -671,7 +675,7 @@ and $f$ faces, then $n - e + f = 2$.
 %\end{rem}
 \addtocounter{thm}{1}
 \begin{thm}
-If $G$ is a planar gr. with at least three vxs, then $e(G) \le 3|G|- 6$. If $G$ is also triangle-free, then $e(G)\le 2jG|- 4$.
+If $G$ is a planar gr. with at least three vxs, then $e(G) \le 3|G|- 6$. If $G$ is also triangle-free, then $e(G)\le 2|G|- 4$.
 \end{thm}
 
 \begin{cor}
@@ -809,10 +813,9 @@ Every planar $G$ is 5-colourable.
 \end{thm}
 
 \begin{thm}[Appel-Haken 1977, conjectured by Guthrie in 1852]
-Every planar gr. is 4-
-colourable. (the countries of every plane map can be 4-coloured so that neighbouring countries get
+Every planar gr. is 4-colourable. (the countries of every plane map can be 4-coloured so that neighbouring countries get
 distinct colours).
-\end{thm}). 
+\end{thm}
 \addtocounter{thm}{1}
 \subsection{Art gallery thm}
 
@@ -860,7 +863,7 @@ It is known that $\overline{d}(G) \ge ct\sqrt{log(t)}$ already implies the exist
 \end{rem}
 \subsection{Edge-colourings}
 \begin{defi}
-A $k$-edge-colouring of $G$ is a labeling $f : E(G) \to [k]$, the labels are “colours”. A proper $k$-edge-colouring is a $k$-edge-colouring such that edges sharing a vx receive different colours, equivalently, each colour class is a matching. A $G$ is $k$-edge-colourable if it has a
+A $k$-edge-colouring of $G$ is a labeling $f : E(G) \to [k]$. A proper $k$-edge-colouring is a $k$-edge-colouring such that edges sharing a vx receive different colours, equivalently, each colour class is a matching. A $G$ is $k$-edge-colourable if it has a
 proper $k$-edge-colouring. The edge-chromatic number or chromatic index $\chi'(G)$ is the minimum $k$ such that $G$ is $k$-edge colourable.
 \end{defi}
 
@@ -892,12 +895,11 @@ If $m = \binom{2k-1}{k}$, then $K_{m,m}$ is not $k$-choosable.
 \end{thm}). 
 
 \begin{defi}
-Let $L(e)$ denote the list of colours available for $e$. A list edge-colouring is a proper edge-colouring $f$ with $f(e)$ chosen from $L(e)$ for each $e$. The list chromatic index or edge-choosability $\chi' l(G)$ is the minimum $k$ such that $G$ has a proper list edge-colouring for each assignment of lists of size $k$ to the edges. Equivalently, $\chi'
-l(G) = \chi_l(L(G))$, where $L(G)$ is the line gr. of $G$.
+Let $L(e)$ denote the list of colours available for $e$. A list edge-colouring is a proper edge-colouring $f$ with $f(e)$ chosen from $L(e)$ for each $e$. The list chromatic index or edge-choosability $\chi'_l(G)$ is the minimum $k$ such that $G$ has a proper list edge-colouring for each assignment of lists of size $k$ to the edges. Equivalently, $\chi'_l(G) = \chi_l(L(G))$, where $L(G)$ is the line gr. of $G$.
 \end{defi}
 \addtocounter{thm}{1}
 \begin{thm}[Galvin 1995]
-$\chi' l(K_{n,n}) = n$
+$\chi'_l(K_{n,n}) = n$
 \end{thm}.
 
 \begin{defi}
@@ -914,9 +916,9 @@ If $D$ is a kernel-perfect orientation of $G$ and $f(x) = d^-_D(x)$ for all $x \
 
 \begin{thm}[Cayley's formula]
 There are $n^{n-2}$ labeled trees on $n$ vxs.
-\end{thm}Cayley’s formula). 
+\end{thm}
 
-Now consider an arbitrary conn. simple $G$ on vx set $[n]$, and denote the \# spanning trees by $t(G)$. The following celebrated result is Kirchhoff’s matrix tree theorem. To formulate it, consider the incidence matrix $B$ of $G$ (as in Definition 1.13), and replace one of the
+Now consider an arbitrary conn. simple $G$ on vx set $[n]$, and denote the \# spanning trees by $t(G)$. The following celebrated result is Kirchhoff’s matrix tree theorem. To formulate it, consider the incidence matrix $B$ of $G$ (as in Def 1.13), and replace one of the
 two 1’s by -1 in an arbitrary manner to obtain the matrix $C$ (we say $C$ is the incidence matrix of an orientation of $G$). $ M = CC^T$ is then a symmetric $n \times n$ matrix, which is 
 
 \[
@@ -1074,7 +1076,7 @@ Then G is 3-conn.
 Among six people it is possible to find three mutual acquaintances or three mutual non-acquaintances.
 \end{pro}
 
-As we shall see, given a natural number $s$, there is an integer $R$ such that if $n \ge R$ then every colouring of the edges of $K_n$ with red and blue contains either a red $K_s$ or a blue $K_s$. More generally, we define the Ramsey number $R(s, t)$ as the smallest value of $N$ for which every red-blue colouring of $K_N$ yields a red $K_s$ or a blue $K_t$. In particular, $R(s, t) = 1$ if there is no such $N$ such that in every red-blue
+As we shall see, given a natural number $s$, there is an integer $R$ such that if $n \ge R$ then every colouring of the edges of $K_n$ with red and blue contains either a red $K_s$ or a blue $K_s$. More generally, we define the Ramsey number $R(s, t)$ as the smallest value of $N$ for which every red-blue colouring of $K_N$ yields a red $K_s$ or a blue $K_t$. In particular, $R(s, t) = \infty$ if there is no such $N$ such that in every red-blue
 colouring of $K_N$ there is a red $K_s$ or a blue $K_t$. It is obvious that
 $ R(s, t) = R(t, s)$ for every $s, t \ge 2$ and $R(s, 2) = R(2, s) = s$. 
 
@@ -1084,7 +1086,7 @@ The function $R(s, t)$ is finite for all $s, t \ge 2$. Quantitatively, if $s > 2
 
 \begin{thm}
 Given $k$ and $s_1, s_2, \dots , s_k$, if $N$ is sufficiently large, then every colouring of $K_N$ with $k$ colours is such that for some $i, 1 \le i \le k$, there is a $K_{s_i}$ coloured with the $i$-th colour. The
-minimal value of $N$ for which this holds is usually denoted by $R_k(s_1, \dots , s_k)$ , and it satisfies $R_k(s_1, \dots , s_k)\le R_k-1(R(s_1, s_2), s_3, \dots , s_k)$.
+minimal value of $N$ for which this holds is usually denoted by $R_k(s_1, \dots , s_k)$ , and it satisfies $R_k(s_1, \dots , s_k)\le R_{k-1}(R(s_1, s_2), s_3, \dots , s_k)$.
 \end{thm}
 
 \begin{thm}
@@ -1120,7 +1122,7 @@ Let $G_1,G_2$ be graphs. $R(G_1,G_2)$ is the minimal $N$ such that any red/blue 
 \end{defi}
 
 \begin{rem}
-Note that $R(G1,G2) \le R(|G1||G2|)$.
+Note that $R(G1,G2) \le R(|G1|,|G2|)$.
 \end{rem}
 
 \begin{thm}[Chvatal 1977]
@@ -1135,7 +1137,7 @@ $ex(n,H)$ is the maximal value of $e(G)$ among graphs $G$ with $n$ vxs containin
 \addtocounter{thm}{1}
 \subsection{Turán’s theorem}
 \begin{defi}
-We call the gr. $K_{n_1,\dots,n_r}$ with $|ni - nj|\le 1$ the Turán graph, denoted by $T_{n,r}$.
+We call the gr. $K_{n_1,\dots,n_r}$ with $|n_i - n_j|\le 1$ the Turán graph, denoted by $T_{n,r}$.
 \end{defi}
 
 \begin{thm}[Turan 1941]
@@ -1144,7 +1146,7 @@ the unique gr. having the maximum \# edges.
 \end{thm} 
 
 \begin{que}
-Let $a_1, \dots , a_n \in \mathbb{R}^d$ be vectors such that $|a_i|\ge 1$ for each $i in [n]$. What is the maximum \# pairs satisfying $|a_i + a_j| < 1$?
+Let $a_1, \dots , a_n \in \mathbb{R}^d$ be vectors such that $|a_i|\ge 1$ for each $i \in [n]$. What is the maximum \# pairs satisfying $|a_i + a_j| < 1$?
 \end{que}
 
 \begin{claim}
@@ -1195,7 +1197,7 @@ There are at most $cn^{3/2}$ pairs.
 \addtocounter{problem}{1}
 
 \begin{problem}
-Prove that if a $G$ is not conn. then its complement $\overline{G}$ is conn. converse is not true.
+Prove that if a $G$ is not conn. then its complement $\overline{G}$ is conn. Converse is not true.
 \end{problem}
 
 \begin{problem}
@@ -1294,7 +1296,7 @@ Let $G$ be a conn. gr. on n vxs with minimum degree $\delta$. Show that
 
 \begin{problem}
 Show that the maximum \# edges in a non-Hamiltonian gr. on $n \ge 3$
-vxs is $\binom{n-2}{1}+1$.
+vxs is $\binom{n-1}{2}+1$.
 \end{problem}
 
 \subsection{Assignment 5}
@@ -1312,7 +1314,7 @@ contained in some perfect matching of $G$. Show that $G$ is 2-edge-conn.
 \end{problem}
 
 \begin{problem}
-Let $A$ be a finite set with subsets $A_1,\dots, A_n$, and let $d_1,\dots, d_n$ be positive integers. Show that there are disjoint subsets $D_k \subseteq A_k$ with $|D_k| = d_k$ for all $k \in [n]$ if and
+Let $A$ be a finite set with subsets $A_1,\dots, A_n$, and let $d_1,\dots, d_n$ be positive integers. Show that there are disjoint subsets $D_k \subseteq A_k$ with $|D_k| = d_k$ for all $k \in [n]$ if and
 only if $|\bigcup_{i\in I}A_i|\ge \sum_{i\in I}d_i$.
 \end{problem}
 
@@ -1322,7 +1324,7 @@ by
 flipping the edges along $P$ (in other words, taking the symmetric difference of $M$ and $P$): by deleting the edges $b_ia_{i+1}$ from $M$ and adding the edges $a_ib_i$ instead.
 \begin{enumerate}[(a)]
 \item Prove Hall's theorem by showing that if Hall's condition is satisfied and M does not cover $A$, then there is an augmenting path in $G$.
-\item Show that if $M$ is not a maximum matching (i.e. there is a larger matching in $G$) then the gr. contains an augmenting path. Is this true for non-bipartite graphs as well?
+\item Show that if $M$ is not a maximum matching (i.e. there is a larger matching in $G$) then the gr. contains an augmenting path. Is this true for non-bipartite graphs as well? Y
 \end{enumerate}
 \end{problem}
 
@@ -1339,8 +1341,8 @@ Show that for $k\ge 1$, every $k$-regular ($k- 1$)-edge-conn. gr. on an even \# 
 
 \begin{problem}
 \begin{enumerate}[(a)]
-\item Show that every planar gr. has a vx of degree at most 5. Is there a planar gr. with minimum degree 5?
-\item Show that any planar bipartite gr. has vx of degree at most 3. Is there a planar bipartite gr. with minimum degree 3?
+\item Show that every planar gr. has a vx of degree at most 5. Is there a planar gr. with minimum degree 5? Y
+\item Show that any planar bipartite gr. has vx of degree at most 3. Is there a planar bipartite gr. with minimum degree 3? Y
 \end{enumerate}
 \end{problem}
 
@@ -1399,7 +1401,7 @@ conjecture: Any $G$ with $\chi(G) \ge 2^{t-2} + 1$ has a $K_t$-minor.
 \end{problem}
 
 \begin{problem}
-Find the edge-chromatic \# $K_n$ (don't use Vizing's theorem).
+Find the edge-chromatic \# $K_n$ (don't use Vizing's theorem). $n$ for $n$ odd, $n-1$ for $n$ even
 \end{problem}
 
 \begin{problem}
