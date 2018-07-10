@@ -823,7 +823,7 @@ distinct colours).
 \subsection{Art gallery thm}
 
 \begin{thm}
-For any museum with $n$ walls, $\left\lfloor n=3\right\rfloor$ guards suffice.
+For any museum with $n$ walls, $\left\lfloor n/3\right\rfloor$ guards suffice.
 \end{thm}
 
 \section{Col. results}
@@ -884,7 +884,7 @@ If $G$ is a bipartite multigraph, then $\chi'(G) = \Delta(G)$.
 \end{thm}
 
 \begin{thm}[Vizing]
-Let $G$ be a simple gr. with maximum degree $\Delta$. Then $\Delta(G)\le \chi0(G) \le \Delta(G) + 1.$
+Let $G$ be a simple gr. with maximum degree $\Delta$. Then $\Delta(G)\le \chi'(G) \le \Delta(G) + 1.$
 \end{thm}
 \addtocounter{thm}{1}
 
@@ -896,7 +896,7 @@ Let $G$ be a simple gr. with maximum degree $\Delta$. Then $\Delta(G)\le \chi0(G
 \addtocounter{thm}{1}
 \begin{thm}[Erdos, Rubin, Taylor 1979]
 If $m = \binom{2k-1}{k}$, then $K_{m,m}$ is not $k$-choosable.
-\end{thm}). 
+\end{thm}
 
 %\begin{defi}
 %Let $L(e)$ denote the list of colours available for $e$. A list edge-colouring is a proper edge-colouring $f$ with $f(e)$ chosen from $L(e)$ for each $e$. The list chromatic index or edge-choosability $\chi'_l(G)$ is the minimum $k$ such that $G$ has a proper list edge-colouring for each assignment of lists of size $k$ to the edges. Equivalently, $\chi'_l(G) = \chi_l(L(G))$, where $L(G)$ is the line gr. of $G$.
@@ -904,7 +904,7 @@ If $m = \binom{2k-1}{k}$, then $K_{m,m}$ is not $k$-choosable.
 \addtocounter{thm}{2}
 \begin{thm}[Galvin 1995]
 $\chi'_l(K_{n,n}) = n$
-\end{thm}.
+\end{thm}
 
 %\begin{defi}
 %A kernel of a digr. is an independent set $S$ having an edge to every vx
