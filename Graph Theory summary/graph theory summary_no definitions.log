@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.14)  10 JUL 2018 12:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.14)  10 JUL 2018 13:23
 entering extended mode
 **"./graph theory summary_no definitions.tex"
 ("graph theory summary_no definitions.tex"
@@ -1752,23 +1752,8 @@ n/10.95 Find the edge-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1423--1424
-\OT1/cmr/m/n/10.95 of max-i-mum de-gree $$
- []
-
-
-Underfull \hbox (badness 8094) in paragraph at lines 1423--1424
-\OT1/cmr/m/n/10.95 edge-coloring, i.e. one
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1423--1424
-\OT1/cmr/m/n/10.95 where each color class
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1423--1424
-\OT1/cmr/m/n/10.95 con-tains $[]$ or
+Underfull \hbox (badness 6332) in paragraph at lines 1423--1424
+\OT1/cmr/m/n/10.95 each color class con-tains
  []
 
 
@@ -1859,7 +1844,7 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Janosch Ott/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Ja
 nosch Ott/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols
 /msbm10.pfb>
-Output written on "graph theory summary_no definitions.pdf" (8 pages, 241268 by
+Output written on "graph theory summary_no definitions.pdf" (8 pages, 241500 by
 tes).
 PDF statistics:
  93 PDF objects out of 1000 (max. 8388607)
