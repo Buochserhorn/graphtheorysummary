@@ -1522,6 +1522,29 @@ Among all the $n$-vx $K_{r+1}$-free graphs, the Turan gr. $T_{n,r}$ contains the
 \begin{problem}
 Let $X$ be a set of $n$ points in the plane with no two points of distance greater than 1. Show that there are at most $\frac{n^2}{3}$ pairs of points in $X$ that have distance greater than $\frac{1}{\sqrt{2}}$.
 \end{problem}
+
+\section{from ex. class}
+
+If $G$ has an odd closed walk, it has an odd cycle.
+
+If a vx of $T$ ahs degree $d$, it appears $d-1$ times in the Prüfer code.
+
+Handshaking lemma: Every finite undirected graph has an even number of vxs with odd degree.
+
+\section{Proof strat.}
+
+\begin{itemize}
+	\item average degree 
+	\item max counterexample 
+	\item double-counting
+	\item Consider max path or cycle, show that it can be extended as long as it doesn't contain everything.
+	\item induction
+	\item contradiction
+	\item rotation
+	\item with $S,T$, $S\cap T\ge 1\ \Rightarrow\ \exists$ longer path, $v-w-$path, $S=\{i|(v_i,v_{i+1})\text{ s.t. }v_i\sim w\}$ and $T=\{i|(v_i,v_{i+1})\text{ s.t. }v_{i+1}\sim v\}$
+	\item remove smth, do smth, add it again
+	\item add (a) vx(s), find e.g. coloring or Ham cycle, rem. vx(s) $\rightarrow$ coloring or Ham. cycle
+\end{itemize}
 \input{notation}
 
 %\end{tiny}
